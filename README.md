@@ -9,4 +9,18 @@
 
 
 # 1. Primeiros Passos
+    Variáveis;
+
+    Tipos primitivos;
+
+    Tipagem dinâmica;
+
+    Operadores de atribuição;
+
+    Operadores aritméticos;
+
+    Operadores lógicos;
+
+    Estruturas condicionais.
+
 

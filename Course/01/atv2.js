@@ -10,4 +10,4 @@ if (num1 > num2) {
     console.log("Os números são iguais.");
 } else {
     console.log(num2 + " é maior que " + num1);
-};
+}; 

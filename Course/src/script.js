@@ -1,9 +1,5 @@
-const idade = 5;
+const headers = ['Inicio', 'Contato', 'Sobre', 'Vendas'];
 
-if (idade >= 18) {
-    console.log("Adulto");
-} else if (idade >= 9) {
-    console.log("Adolescente");
-} else {
-    console.log("Criança");
-}
+for(let i = 0; i < headers.length; i+=1){
+    console.log(headers[i])
+};

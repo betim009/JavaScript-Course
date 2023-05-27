@@ -2,26 +2,20 @@
 
 
 ## 0. Preparando o ambiente:
-    Editor online: https://playcode.io/new
-    - VSCode
-    - Extensão: Code Runer, Live Server
-    - Node
+- Editor online: https://playcode.io/new
+- VSCode
+- Extensão: Code Runer, Live Server
+- Node
 
 
 # 1. Primeiros Passos
-    Variáveis;
-
-    Tipos primitivos;
-
-    Tipagem dinâmica;
-
-    Operadores de atribuição;
-
-    Operadores aritméticos;
-
-    Operadores lógicos;
-
-    Estruturas condicionais.
+- Variáveis;
+- Tipos primitivos;
+- Tipagem dinâmica;
+- Operadores de atribuição;
+- Operadores aritméticos;
+- Operadores lógicos;
+- Estruturas condicionais.
 
 # 2. Arrays
 

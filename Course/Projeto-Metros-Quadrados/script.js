@@ -6,10 +6,20 @@ function calcular() {
 
     let square = document.getElementById("square");
     let h1 = document.getElementById("resultado");
-    
+
     h1.textContent = `${resultado} m²`;
 
-    square.style.backgroundColor = "black";
+
+    if (resultado <= 100) {
+        square.style.backgroundColor = "black";
+    } else if (resultado > 100 && resultado <= 500) {
+        square.style.backgroundColor = "red";
+    } else if (resultado > 500 && resultado < 10000 ) {
+        square.style.backgroundColor = "blue";
+    } else {
+        square.style.backgroundColor = "yellow";
+    }
+
     square.style.width = resultado + "px";
     square.style.height = resultado + "px";
 }

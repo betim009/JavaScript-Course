@@ -19,12 +19,14 @@ console.log('\nSaída de i:":'); // ignore
 console.log(i);
 
 // 3. Tipos de Variaveis:
-console.log('\n3. Tipos de Variaveis":'); // ignore
+console.log('\n3. Tipos de Variaveis:'); // ignore
 const nomeCompleto = 'Alberto F. Couto';
 const idade = 28;
 const flameguista = true;
 
+// 4. typeoff:
 // saída: string number boolean
+console.log('\n4. typeoff: ');
 console.log(typeof nomeCompleto, typeof idade, typeof flameguista);
 
 // saída: undefined

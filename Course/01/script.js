@@ -1,3 +1,35 @@
+// 0. São 3 tipos de variavies
+var nome = 'alberto';    // Variavel global e altera valor inicial
+let nomeDois = 'Alberto' // altera valor inicial
+const nomeTres = 'alBerto' // não altera valor inicial
+
+// 1. Declarando Variaveis
+const admin = "admin@email.com";
+let usuario = "alberto@email.com";
+
+var i = 0;
+
+// 2. Exibindo valores de 'admin' e 'usuario'
+console.log('2. Valores de "admin" e "usuario":'); // ignore
+console.log(admin);
+console.log(usuario);
+
+// Saída de i:
+console.log('\nSaída de i:":'); // ignore
+console.log(i);
+
+// 3. Tipos de Variaveis:
+console.log('\n3. Tipos de Variaveis":'); // ignore
+const nomeCompleto = 'Alberto F. Couto';
+const idade = 28;
+const flameguista = true;
+
+// saída: string number boolean
+console.log(typeof nomeCompleto, typeof idade, typeof flameguista);
+
+// saída: undefined
+console.log(typeof vascaino); // essa variavel não foi declarada por exemplo.
+
 /*
 Tipos de dados
 number:	Valores numéricos
@@ -13,42 +45,3 @@ null:	Valor inexistente
 // Usar camelCase: em JavaScript, o estilo mais comum é o camelCase,
 // em que a primeira palavra começa com letra minúscula e as subsequentes,
 // com letra maiúscula, sem espaços;
-
-
-
-// 1. Declarando Variaveis
-var userEmail = 'alberto@gmail.com';
-let userId = 26;
-const userCity = 'Iúna';
-
-console.log(userEmail = 'outrapessoa@gmail.com') // outrapessoa@gmail.com
-console.log(userId = 1)
-// console.log(userCity = 'Alegre') // TypeError: Assignment to constant variable.
-
-// A variavel Var ela foge do escopo.
-
-// Escopo: 01
-if (true) {
-    var userAge = '20'
-}
-console.log(userAge)
-
-// Escopo com error
-
-// if (true){
-//     let userTwoAge = '20'
-//     console.log(userTwoAge)
-// }
-// console.log(userTwoAge)
-
-
-// Tipos de Variaveis
-const fullName = 'Alberto F. Couto';
-const age = 28
-const flameguista = true;
-
-// saída: string number boolean
-console.log(typeof fullName, typeof age, typeof flameguista)
-
-// saída: undefined
-console.log(typeof vascaino)

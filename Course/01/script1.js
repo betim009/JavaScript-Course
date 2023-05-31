@@ -5,6 +5,6 @@
 
 const myName = "Alberto";
 const birthCity = "Alegre";
-const birthYear = 1995
+const birthYear = 1995;
 
-console.log(typeof myName, typeof birthCity, typeof birthYear)
+console.log(myName, birthCity, birthYear)

@@ -1,5 +1,5 @@
 // 1. Operadores de comparação:
-console.log("1. Operadores de comparação: ") // ignore
+console.log("1. Operadores de comparação: "); // ignore
 
 const valorA = 10;
 const valorB = 20;
@@ -7,17 +7,17 @@ const valorC = "Alberto";
 const valorD = "Creuza";
 
 // Operador "==" e Igual a (valor):
-console.log("\nOperador '==' e Igual a (valor): ") // ignore
+console.log("\nOperador '==' e Igual a (valor): "); // ignore
 let compare = valorA == valorB; 
 console.log(compare);
 
 // Operador Estritamente igual "===":
-console.log("Operador Estritamente igual '===':") // ignore
+console.log("Operador Estritamente igual '===':"); // ignore
 compare = valorA === 10;
 console.log(compare);
 
 // Operador maior e menor:
-console.log("Operador maior e menor:") // ignore
+console.log("Operador maior e menor:"); // ignore
 compare = valorA > valorB;
 console.log(compare);
 
@@ -33,10 +33,10 @@ const idade = 90;
 if (idade >= 18) {
     console.log("Maior de idade.");
 } else {
-    console.log('Menor de idade.')
-}
+    console.log('Menor de idade.');
+};
 
-console.log('\n') // ignore
+console.log('\n'); // ignore
 
 // 2.2 Se pode votar:
 const idadeAlberto = 27;
@@ -46,14 +46,14 @@ if (idadeAlberto >= 16) {
     canVote = "Pode Votar!";
 } else {
     canVote = "Não pode Votar!";
-}
+};
 
-console.log(canVote)
+console.log(canVote);
 
 console.log('\n') // ignore
 
 // 3. Operador Ternário:
-console.log('3. Operador Ternário:')
+console.log('3. Operador Ternário:');
 
 const idadePessoa = 15;
 

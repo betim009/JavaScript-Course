@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <h1>Projeto Soma Dois Números</h1>
+    <h2>Formulário:</h2>
+    <form>
+        <label for="campoA">Primeiro Valor:</label>
+        <input type="number"
+            id="campoA"
+            name="campoA"
+            required
+            onchange="exibeValor()"
+        >
+        
+        <label for="campoB">Segundo Valor:</label>
+        <input type="number"
+            id="campoB"
+            name="campoB"
+            required
+            onchange="exibeValor()"
+        >
+
+        <input type="button"
+            value="Enviar"
+            onclick="enviaValor()"
+        >
+    </form>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>

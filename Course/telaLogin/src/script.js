@@ -25,7 +25,7 @@ function loginValidate() {
 
     const validate = email && password;
 
-    if (validate) { 
+    if (validate) {
         btnEntrar.disabled = false;
     } else {
         btnEntrar.disabled = true;
@@ -33,13 +33,5 @@ function loginValidate() {
 };
 
 function sendLogin() {
-    const email = emailValidate(); 
-    const password = passwordValidate();
-
-    const validate = email && password;
-
-
-    if (validate) { 
-        alert("Login feito com sucesso!");
-    };
+    alert("Login feito com sucesso!");
 };

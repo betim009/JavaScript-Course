@@ -7,15 +7,15 @@ function calcular() {
     square.style.width = result + "px";
     square.style.height = result + "px";
 
-    createSquare(result)
-}
+    createSquare(result);
+};
 
 function createResult() {
     const metros1 = parseFloat(document.getElementById("metros1").value);
     const metros2 = parseFloat(document.getElementById("metros2").value);
 
     return metros1 * metros2;
-}
+};
 
 function createSquare(result) {
     if (result <= 100) {
@@ -26,8 +26,8 @@ function createSquare(result) {
         return square.style.backgroundColor = "blue";
     } else {
         return square.style.backgroundColor = "yellow";
-    }
-}
+    };
+};
 
 
 

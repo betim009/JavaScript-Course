@@ -1,4 +1,4 @@
-// Revertendo a string manualmente
+// 1. Revertendo a string manualmente
 function reverseWord(word) {
     let reversedWord = '';
 
@@ -9,6 +9,7 @@ function reverseWord(word) {
     return reversedWord;
 }
 
+// 2. Verifica se é palindromo
 function verifyPalindrome(word) {
     const loweredCaseWord = word.toLowerCase();
     const reversedWord = reverseWord(loweredCaseWord);
@@ -17,5 +18,17 @@ function verifyPalindrome(word) {
     return isPalindrome;
 }
 
+
+// Com split
+// function verifyPalindrome (string) {
+//     const reverse = string.split('').reverse().join('');
+
+//     if (reverse === string) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+// };
+
 console.log(reverseWord('cavalo'));
-console.log(verifyPalindrome('arara'));
+console.log(verifyPalindrome('Arara'));

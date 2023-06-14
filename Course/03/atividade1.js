@@ -13,6 +13,8 @@ function getHighestIndex(numbers) {
 }
 
 
-console.log(getHighestIndex([20, 3, 5]))
+// console.log(getHighestIndex([20, 3, 5]))
+
+module.exports = getHighestIndex;
 
 

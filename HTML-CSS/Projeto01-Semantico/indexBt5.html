@@ -6,94 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto de Ensino de HTML Semântico</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="">
-    <header class="container-fluid bg-dark text-white">
+<body>
+    <!-- Cabeçalho -->
+    <header class="container-fluid bg-dark text-white p-2">
         <h1>One Piece</h1>
+
+        <nav>
+            <ul class="nav border">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#section1">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#section2">Arco Enies Lobby</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#section3">Recomendações de Episódios</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="#section1">Sobre</a>
-            </li>
+    <!-- Conteúdo -->
+    <main class="container-fluid">
+        <div class="row">
+            <section id="section1" class="col-md-6">
+                <h2 class="display-6">Sobre</h2>
+                <article>
+                    <h3>O que é?</h3>
+                    <p>
+                        One Piece é um popular mangá e anime criado por Eiichiro Oda.
+                        <br>
+                        A história acompanha Monkey D. Luffy e sua tripulação enquanto
+                        <br>
+                        eles procuram pelo tesouro lendário conhecido como "One Piece".
+                    </p>
+                </article>
 
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="#section2">Arco Enies Lobby</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="#section3">Recomendações de Episódios</a>
-            </li>
-        </ul>
-    </nav>
+                <article>
+                    <h3>Personagens Principais</h3>
+                    <ol>
+                        <li>Monkey D. Luffy</li>
+                        <li>Roronoa Zoro</li>
+                        <li>Nami</li>
+                        <li>Usopp</li>
+                        <li>Sanji</li>
+                    </ol>
+                </article>
+            </section>
 
-    <main>
-        <section id="section1">
-            <h2>Seção 1 - Sobre One Piece</h2>
-            <article>
-                <h3>Introdução</h3>
-                <p>
-                    One Piece é um popular mangá e anime criado por Eiichiro Oda. A história acompanha Monkey D. Luffy e
-                    sua tripulação enquanto eles procuram pelo tesouro lendário conhecido como "One Piece".
-                </p>
-            </article>
-            <article>
-                <h3>Personagens Principais</h3>
-                <ul>
-                    <li>Monkey D. Luffy</li>
-                    <li>Roronoa Zoro</li>
-                    <li>Nami</li>
-                    <li>Usopp</li>
-                    <li>Sanji</li>
-                </ul>
-            </article>
-        </section>
+            <section id="section2" class="col-md-6">
+                <h2 class="display-6">Seção 2 - Arco Enies Lobby</h2>
+                <article>
+                    <h3>Visão Geral</h3>
+                    <p>
+                        O arco Enies Lobby é um dos arcos mais emocionantes e importantes de One Piece. Nele, a
+                        tripulação
+                        de Luffy luta contra a organização do Governo Mundial para resgatar um de seus membros, Nico
+                        Robin.
+                    </p>
+                </article>
+                <article>
+                    <h3>Principais Batalhas</h3>
+                    <ul>
+                        <li>Luffy vs. Rob Lucci</li>
+                        <li>Zoro vs. Kaku</li>
+                        <li>Sanji vs. Jabra</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
 
-        <section id="section2">
-            <h2>Seção 2 - Arco Enies Lobby</h2>
-            <article>
-                <h3>Visão Geral</h3>
-                <p>
-                    O arco Enies Lobby é um dos arcos mais emocionantes e importantes de One Piece. Nele, a tripulação
-                    de Luffy luta contra a organização do Governo Mundial para resgatar um de seus membros, Nico Robin.
-                </p>
-            </article>
-            <article>
-                <h3>Principais Batalhas</h3>
-                <ul>
-                    <li>Luffy vs. Rob Lucci</li>
-                    <li>Zoro vs. Kaku</li>
-                    <li>Sanji vs. Jabra</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="section3">
-            <h2>Seção 3 - Recomendações de Episódios</h2>
-            <article>
-                <h3>Melhores Episódios</h3>
-                <ol>
-                    <li>Episódio 151 - "A Luta Final Começa! Luffy vs. Lucci"</li>
-                    <li>Episódio 226 - "O Juramento Que Viverá Para Sempre! As Lágrimas de Nami!"</li>
-                    <li>Episódio 377 - "Golpe Final - Gomu Gomu vs. Kage Kage"</li>
-                </ol>
-            </article>
-            <article>
-                <h3>Episódios Preenchimento</h3>
-                <p>
-                    Alguns episódios de One Piece são considerados preenchimento (filler) e não estão diretamente
-                    relacionados à trama principal. É possível pular esses episódios caso queira se concentrar apenas na
-                    história principal.
-                </p>
-            </article>
+        <section id="section3" class="mt-5">
+            <div>
+                <h2 class="display-6">Seção 3 - Recomendações de Episódios</h2>
+                <article>
+                    <h3>Melhores Episódios</h3>
+                    <ol>
+                        <li>Episódio 151 - "A Luta Final Começa! Luffy vs. Lucci"</li>
+                        <li>Episódio 226 - "O Juramento Que Viverá Para Sempre! As Lágrimas de Nami!"</li>
+                        <li>Episódio 377 - "Golpe Final - Gomu Gomu vs. Kage Kage"</li>
+                    </ol>
+                </article>
+                <article>
+                    <h3>Episódios Preenchimento</h3>
+                    <p>
+                        Alguns episódios de One Piece são considerados preenchimento (filler) e não estão diretamente
+                        relacionados à trama principal. É possível pular esses episódios caso queira se concentrar
+                        apenas na
+                        história principal.
+                    </p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Meu Projeto</p>
+    <!-- Rodapé -->
+    <footer class="mt-5 p-4 bg-dark text-white text-center">
+        <p>&copy; One Piece Bootstrap</p>
+        <p>2023</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

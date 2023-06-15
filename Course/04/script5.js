@@ -4,15 +4,8 @@ const customer = {
     job: 'Software Engineer',
   };
   
-  // Criação da função
-  const addProperty = (object, key, value) => {
-    if (typeof object[key] === "undefined"){
-      object[key] = value;
-    }
-  };
+  customer.lastName = 'Faria';
+  console.log(customer); 
   
-  // Chamada da função passando os valores dos parâmetros
-  addProperty(customer, 'birthPlace', '19/07/1932');
-  
-  // Exibe o objeto transformado
+  customer['lastName'] = 'Silva';
   console.log(customer);

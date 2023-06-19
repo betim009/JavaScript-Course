@@ -36,3 +36,19 @@ reader.favoriteBooks.push(
 );
 
 console.log(reader);
+
+// 3 - Acesse as chaves name e favoriteBooks e faça um console.log() no seguinte formato:
+// “Julia tem {quantidade} livros favoritos.”
+// {quantidade} corresponde à quantidade de livros favoritos,
+// sendo um número gerado automaticamente pelo seu código. 
+// Caso a quantidade seja igual a 1, a frase deve ser:
+// “Julia tem 1 livro favorito.”
+
+const nome = reader['name'];
+const qtd = reader['favoriteBooks'].length
+
+const favoriteBooks = qtd > 1
+    ? `${nome} tem ${qtd} livros favoritos`
+    : `${nome} tem ${qtd} livro favorito`;
+
+console.log(favoriteBooks);

@@ -21,7 +21,8 @@
 
 # 3. Function
 
-# 4. Objetos
+# 4. Objetos:
+- https://www.samanthaming.com/tidbits/76-converting-object-to-array/
 
 # Projeto-Metros-Quadrados
 

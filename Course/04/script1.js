@@ -1,10 +1,10 @@
 const account = {
-    agency: '0975',
-    bank: {
-      cod: '012',
-      id: 4,
-      name: 'TrybeBank',
-    },
+  agency: '0975',
+  bank: {
+    cod: '012',
+    id: 4,
+    name: 'TrybeBank',
+  },
 };
 
 const bank = account.bank;

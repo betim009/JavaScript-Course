@@ -15,10 +15,10 @@ const addProperty = (object, key, value) => {
     };
 };
 
-addProperty(customer, 'email', 'roberto.varella@gmail.com');
+addProperty(customer, 'email', 'alberto@gmail.com');
 addProperty(customer, 'fone', '99999-9999');
-addProperty(customer, 'userGithub', 'rob-var');
-addProperty(customer, 'linkedIn', 'https://linkedin.com/robs-varella-wow');
+addProperty(customer, 'userGithub', 'bebeto-js');
+addProperty(customer, 'linkedIn', 'https://linkedin.com/bebeto-js');
 
 // Exibe o objeto transformado
 console.log(customer);

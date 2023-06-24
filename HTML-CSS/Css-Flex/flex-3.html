@@ -9,12 +9,12 @@
 <style>
     .flex-container {
         display: flex;
-        flex-direction: column; /* Orientação agora em coluna */
+        flex-direction: column-reverse; /* Iverte posições */
         background-color: #f1f1f1;
     }
 
     .flex-container div {
-        background-color: #333333;
+        background-color: #4f0505;
         text-align: center;
         line-height: 75px;
         font-size: 30px;
@@ -22,8 +22,9 @@
         margin-bottom: 2px;
     }
 
-    p {
-        color: white;
+    h2 {
+        font-family: sans-serif;
+        color: burlywood;
     }
 </style>
 
@@ -31,13 +32,13 @@
     <!-- Flex Coluna Vertical-->
     <div class="flex-container">
         <div>
-            <p>Primeira Coluna</p>
+            <h2>Título 1</h2>
         </div>
         <div>
-            <p>Segunda Coluna</p>
+            <h2>Título 2</h2>
         </div>
         <div>
-            <p>Terceira Coluna</p>
+            <h2>Título 3</h2>
         </div>
     </div>
 </body>

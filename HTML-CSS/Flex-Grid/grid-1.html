@@ -1,0 +1,66 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0 auto;
+        }
+
+        .grid-container-2{
+            background-color: #ccc;
+            display: grid;
+            grid-template-columns: auto auto; /* A quantidade de auto é as colunas*/
+            gap: 60px; /* espaçamento */
+        }
+
+        .grid-container-4{
+            background-color: #ccc;
+            display: grid;
+            grid-template-columns: auto auto auto auto; 
+            
+        }
+
+        div{
+            background-color: black;
+            border: 6px solid red;
+            color: white;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            align-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="grid-container-2">
+            <div>
+                <p>grid 1</p>
+            </div>
+            <div>
+                <p>grid 1</p>
+            </div>
+        </section>
+
+        <section class="grid-container-4">
+            <div>
+                <p>grid 1</p>
+            </div>
+            <div>
+                <p>grid 2</p>
+            </div>
+            <div>
+                <p>grid 3</p>
+            </div>
+            <div>
+                <p>grid 4</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

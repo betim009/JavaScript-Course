@@ -15,11 +15,14 @@ function validateLogin(event) {
       return e.email === email && e.password === password;
     });
 
-    account
-      ? alert("Login foi um sucesso!")
-      : alert("Login Inválido!")
+    if (account) {
+      alert("Login foi um sucesso!")
+      return window.location.href = "home.html";
+    } else {
+      alert("Login Inválido!")
+    }
 
   } else {
-    document.getElementById("message").textContent = "Sem Valores no LocalStorage";
+    alert("Sem Valores no LocalStorage");
   }
 }

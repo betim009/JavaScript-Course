@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+
+</head>
+
+<body>
+  <main>
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="validateLogin(event)">
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <button type="submit">Login</button>
+    </form>
+    <span id="message"></span>
+  </main>
+
+  <script src="scripts/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cadastro</title>
+
+</head>
+
+<body>
+  <h1>Cadastro</h1>
+
+  <main>
+    <form id="cadastroForm" onsubmit="createAccount(event)">
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <span id="message"></span>
+  </main>
+
+  <script src="scripts/cadastro.js"></script>
+</body>
+
+</html>

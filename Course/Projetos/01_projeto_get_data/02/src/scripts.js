@@ -14,10 +14,17 @@ const getData = () => {
 
 const getById = (id) => {
     const users = getData();
+    if (!id) {
+        return 'not found id';
+    };
+
+    if (typeof id !== 'number') {
+        return 'id not is number'
+    };
 
     if (id > users.length) {
         return `User with id '${id}' not found`;
-    }
+    };
 
     const findUser = users.find((user) => user.id === id);
 
@@ -27,6 +34,20 @@ const getById = (id) => {
 const createUser = (user) => {
     const users = getData();
     const newId = users.length + 1;
+
+    if (!user) {
+        return 'Not found user';
+    };
+
+    if (typeof user !== 'object') {
+        return 'Not object';
+    };
+
+    const { name, email, password } = user;
+
+    if (!name || !email || !password) {
+        return 'name, email or password required';
+    };
 
     const newUser = {
         id: newId,

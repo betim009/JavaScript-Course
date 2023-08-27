@@ -1,36 +1,6 @@
-const data = require('./data')
-const { validateData, validateId, validateUser } = require('./validations')
+const { validateId, validateUser } = require('../middleware/validations')
 
-function getAllUsers() {
-    const validData = validateData(data);
-
-    if (validData) {
-        return validData;
-    };
-
-    return data;
-};
-
-function getUserById(id) {
-    const users = getAllUsers();
-    const validId = validateId(id);
-
-    if (validId) {
-        return validId;
-    };
-
-    for (let index = 0; index < users.length; index++) {
-        const user = users[index];
-        if (user['id'] === Number(id)) {
-            return user;
-        };
-    };
-
-    return 'User id not found'
-};
-
-function createUser(user) {
-    const users = getAllUsers();
+function createUser(data, user) {
     const validUser = validateUser(user);
 
     if (validUser) {
@@ -40,7 +10,7 @@ function createUser(user) {
     const { name, email, password } = user
 
     // Encontrar o próximo ID disponível:
-    const newId = users.length + 1;
+    const newId = data.length + 1;
 
     const newUser = {
         id: newId,
@@ -49,14 +19,12 @@ function createUser(user) {
         password,
     };
 
-    users.push(newUser);
+    data.push(newUser);
 
     return newUser;
 };
 
-function updateUserById(id, userUpdate) {
-    const users = getAllUsers();
-
+function updateUserById(data, id, userUpdate) {
     const validId = validateId(id);
 
     if (validId) {
@@ -69,8 +37,8 @@ function updateUserById(id, userUpdate) {
         return validUser;
     };
 
-    for (let index = 0; index < users.length; index++) {
-        const user = users[index];
+    for (let index = 0; index < data.length; index++) {
+        const user = data[index];
         const userId = user['id'];
 
         if (userId === id) {
@@ -85,9 +53,7 @@ function updateUserById(id, userUpdate) {
     return 'not found'
 };
 
-function deleteById(id) {
-    users = getAllUsers();
-
+function deleteById(data, id) {
     const validId = validateId(id);
 
     if (validId) {
@@ -97,8 +63,8 @@ function deleteById(id) {
     const newUsers = [];
     let userRemoved = '';
 
-    for (let index = 0; index < users.length; index++) {
-        const user = users[index];
+    for (let index = 0; index < data.length; index++) {
+        const user = data[index];
         if (user.id !== id) {
             newUsers.push(user);
         };
@@ -110,17 +76,12 @@ function deleteById(id) {
 
     if (data.length === newUsers.length) {
         return 'not found user'
-    }
+    };
 
-    return `user ${userRemoved} removed`
+    return `user ${userRemoved} removed`;
 };
 
-
-
-
 module.exports = {
-    getAllUsers,
-    getUserById,
     createUser,
     updateUserById,
     deleteById,

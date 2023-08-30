@@ -41,5 +41,6 @@ const updateUser = updateUserById(users, 31,
 
 // deleta usuario
 const deleteUser = deleteById(users, 31);
-console.log(deleteUser)
+console.log(deleteUser);
+console.log(allUsers);
 

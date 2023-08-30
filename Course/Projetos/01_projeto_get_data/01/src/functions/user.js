@@ -77,7 +77,9 @@ function deleteById(data, id) {
     if (data.length === newUsers.length) {
         return 'not found user'
     };
-
+    
+    data.length = 0;
+    data.push = [...newUsers];
     return `user ${userRemoved} removed`;
 };
 

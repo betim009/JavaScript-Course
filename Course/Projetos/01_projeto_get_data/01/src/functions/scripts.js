@@ -1,4 +1,4 @@
-const { validateData, validateId, validateUser } = require('../middleware/validations')
+const { validateData, validateId } = require('../middleware/validations')
 
 function getAll(data) {
     const validData = validateData(data);
@@ -11,7 +11,12 @@ function getAll(data) {
 };
 
 function getById(data, id) {
+    const validData = validateData(data);
     const validId = validateId(id)
+
+    if (validData) {
+        return validData;
+    };
 
     if (validId) {
         return validId;
@@ -19,12 +24,12 @@ function getById(data, id) {
 
     for (let index = 0; index < data.length; index++) {
         const user = data[index];
-        if (user['id'] === Number(id)) {
+        if (user.id === id) {
             return user;
         };
     };
 
-    return 'User id not found'
+    return 'Not found id'
 };
 
 module.exports = {

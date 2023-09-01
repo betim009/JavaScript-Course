@@ -1,10 +1,10 @@
 function validateData(data) {
     if (!data) {
-        return 'Data not found';
+        return '404: Data not found';
     }
 
     if (!Array.isArray(data) || data.length === 0) {
-        return 'Data is not a valid array or array is empty';
+        return '400: Data is not a valid array or array is empty';
     }
 
     return null; // No validation error
@@ -23,8 +23,6 @@ function validateId(id) {
 };
 
 function validateUser(user) {
-    const { name, email, password } = user;
-
     if (!user) {
         return 'Not found user';
     };
@@ -32,6 +30,8 @@ function validateUser(user) {
     if (typeof user !== 'object') {
         return 'Not object';
     };
+
+    const { name, email, password } = user;
 
     if (!name || !email || !password) {
         return 'Not found name, email, password';

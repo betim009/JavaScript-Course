@@ -1,30 +1,35 @@
-const { validateId, validateUser } = require('../middleware/validations')
+const { validateData, validateId, validateUser } = require('../middleware/validations')
 
 function createUser(data, user) {
-    const validUser = validateUser(user);
+    const validData = validateData(data);
+    if (validData) {
+        return validData;
+    };
 
+    const validUser = validateUser(user);
     if (validUser) {
         return validUser;
     };
-
-    const { name, email, password } = user
 
     // Encontrar o próximo ID disponível:
     const newId = data.length + 1;
 
     const newUser = {
         id: newId,
-        name,
-        email,
-        password,
+        ...user
     };
 
     data.push(newUser);
 
-    return newUser;
+    return `200: User ${newUser.name} created`;
 };
 
 function updateUserById(data, id, userUpdate) {
+    const validData = validateData(data);
+    if (validData) {
+        return validData;
+    };
+
     const validId = validateId(id);
 
     if (validId) {
@@ -39,14 +44,12 @@ function updateUserById(data, id, userUpdate) {
 
     for (let index = 0; index < data.length; index++) {
         const user = data[index];
-        const userId = user['id'];
-
-        if (userId === id) {
-            user.name = userUpdate.name;
-            user.email = userUpdate.email;
-            user.password = userUpdate.password;
-
-            return user;  // Se encontrou o usuário, não precisa continuar procurando
+        if (user.id === id) {
+            data[index] = {
+                id,
+                ...userUpdate,
+            };
+            return `200: user ${userUpdate.name} updated`;
         };
     };
 
@@ -54,8 +57,12 @@ function updateUserById(data, id, userUpdate) {
 };
 
 function deleteById(data, id) {
-    const validId = validateId(id);
+    const validData = validateData(data);
+    if (validData) {
+        return validData;
+    };
 
+    const validId = validateId(id);
     if (validId) {
         return validId;
     };
@@ -77,7 +84,7 @@ function deleteById(data, id) {
     if (data.length === newUsers.length) {
         return 'not found user'
     };
-    
+
     data.length = 0;
     data.push = [...newUsers];
     return `user ${userRemoved} removed`;

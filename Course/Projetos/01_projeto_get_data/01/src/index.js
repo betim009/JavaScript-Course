@@ -13,34 +13,34 @@ const allUsers = getAll(users); // todos usuários
 const allProducts = getAll(products); // todos produtos
 // console.log(allProducts);
 
-const findUser = getById(users, 1); // busca usuario por id
+const findUser = getById(users, '1'); // busca usuario por id
 // console.log(findUser);
 
 // busca produto por id
 const findProduct = getById(products, 1)
-// console.log(findProduct);https://www.twitch.tv/tftoddy
+// console.log(findProduct);
 
 // Cria usuário
 const new_user_31 = createUser(users,
     {
         name: 'perry',
         email: 'perry@gmail.com',
-        password: "pddd1ddd"
+        password: "password_1_perry"
     });
-// console.log(new_user_31)
+// console.log(new_user_31);
+// console.log(allUsers);
 
 
 // altera usuario 
 const updateUser = updateUserById(users, 31,
     {
         name: 'Alex',
-        email: 'perry@email.com',
+        email: 'alberto@gmail.com',
         password: '1234567'
     });
-// console.log(updateUser)
+console.log(updateUser)
+console.log(allUsers)
 
 // deleta usuario
-const deleteUser = deleteById(users, 31);
-console.log(deleteUser);
-console.log(allUsers);
+// const deleteUser = deleteById(users, 31);
 

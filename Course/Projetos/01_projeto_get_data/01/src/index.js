@@ -4,6 +4,7 @@ const products = require('./data/products');
 // Functions
 const { getAll, getById } = require('./functions/scripts');
 const { createUser, updateUserById, deleteById } = require('./functions/user');
+const { createProduct, updateProductById, deleteProductById } = require('./functions/product');
 
 
 // Rotas

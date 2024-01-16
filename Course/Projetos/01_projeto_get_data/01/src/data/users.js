@@ -1,4 +1,4 @@
-export const users = [
+const users = [
     {
         id: 1,
         name: 'Alberto Fernandes Couto',
@@ -181,5 +181,4 @@ export const users = [
     },
 ];
 
-
-
+module.exports = users;

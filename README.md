@@ -1,35 +1,29 @@
 # Javascript
 
 
-## 0. Preparando o ambiente:
+### 0. Preparando o ambiente:
 - Editor online: https://playcode.io/new
-- VSCode
+- VSCode (preferência)
 - Extensão: Code Runer, Live Server
-- Node
+- Node js
 
 
-# 1. Primeiros Passos
-- Variáveis;
-- Tipos primitivos;
-- Tipagem dinâmica;
-- Operadores de atribuição;
-- Operadores aritméticos;
-- Operadores lógicos;
-- Estruturas condicionais.
+### 1. Tipos de dados
 
-# 2. Arrays
+### 2. Condições
 
-# 3. Function
+### 3. Repetições
 
-# 4. Objetos:
-- https://www.samanthaming.com/tidbits/76-converting-object-to-array/
+### 4. Functions
 
-# Projeto-Metros-Quadrados
+### 5. POO
 
-# Projeto Forms Soma Dois Números 
+### 6. DOM
 
-# Projeto Tela Login
-
-# Projeto Toggle Darktheme
+## Projetos
+### Projeto-Metros-Quadrados
+### Projeto Forms Soma Dois Números 
+### Projeto Tela Login
+### Projeto Toggle Darktheme
 
 

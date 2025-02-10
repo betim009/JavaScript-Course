@@ -1,0 +1,116 @@
+.div-main {
+    width: 100%;
+    /* Largura total da div */
+    min-height: 100vh;
+    background-image: url('wallpaper.png');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a div */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+}
+
+.header {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 30px;
+}
+
+.logo {
+    width: 160px;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 30px;
+    background-color: rgba(221, 155, 21, 0.689);
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(59, 51, 36);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    color: white;
+    font-size: 28px;
+}
+
+.accordion-header:hover {
+    background-color: #3a2403;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+    background-color: rgba(221, 155, 21, 0.689);
+    border-top: 1px solid #ccc;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+.img-accordion {
+    width: 60px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.red-bar {
+    background-image: url('tribal.webp');
+    /* Substitua pelo caminho correto */
+    background-repeat: repeat-x;
+    /* Faz a imagem se repetir apenas horizontalmente */
+    background-size: auto 100%;
+    /* Mantém a altura fixa e ajusta a largura automaticamente */
+    height: 30px;
+    /* Ajuste a altura da barra conforme necessário */
+    width: 100%;
+    border: #2b2824 1.8px solid;
+    border-radius: 10px;
+}
+
+.content-text {
+    background-color: rgba(207, 160, 66, 0.787);
+    border: #2b2824 5px solid;
+    min-height: 600px;
+}
+
+.img-60 {
+    width: 60px;
+}
+
+.img-modal {
+    height: 400px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: end;
+}
+
+#close-modal {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}

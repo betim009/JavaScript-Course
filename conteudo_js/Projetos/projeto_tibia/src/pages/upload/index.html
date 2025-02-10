@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h2>Upload de Imagem para ImgBB</h2>
+
+    <label>Nome da Imagem:</label>
+    <input type="text" id="imageName" placeholder="Digite o nome da imagem">
+
+    <label>Nome do Álbum:</label>
+    <input type="text" id="albumName" placeholder="Digite o nome do álbum">
+
+    <input type="file" id="imageInput" accept="image/*">
+    <button id="btnEnviar">Enviar</button>
+
+    <h3>Imagem enviada:</h3>
+    <p id="imageLink"></p>
+    <img id="preview" src="" style="max-width: 300px; display: none;">
+
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

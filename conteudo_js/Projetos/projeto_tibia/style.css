@@ -5,7 +5,7 @@
 .div-main {
     width: 100%; /* Largura total da div */
     height: 100vh; /* Altura total da viewport */
-    background-image: url('bg.webp'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('bg.png'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Faz a imagem cobrir toda a div */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */

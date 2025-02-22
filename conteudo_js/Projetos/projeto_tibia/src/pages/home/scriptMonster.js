@@ -1,26 +1,19 @@
-import { shields } from "./mocks/shields.js";
+import { monsters } from "./mocks/monsters.js";
 
-const liEscudos = document.getElementById('li-escudos');
+const liMonsters = document.getElementById('li-monsters');
 const contentResult = document.getElementById('content-result');
 
-
-liEscudos.addEventListener('click', () => {
-    alert('')
-    console.log(contentResult)
+liMonsters.addEventListener('click', () => {
     contentResult.innerHTML = '';
-    contentResult.innerHTML = "OI"
     contentResult.innerHTML += `
         <table class="table table-warning">
             <thead>
                 <tr> 
                     <th>
-                        <h6>Imagem</h6>
+                        <h6>Monstro</h6>
                     </th>
                     <th>
                         <h6>Nome</h6>
-                    </th>
-                    <th>
-                        <h6>Defesa</h6>
                     </th>
                 </tr>
             </thead>
@@ -29,17 +22,14 @@ liEscudos.addEventListener('click', () => {
         </table>
     `
     const tbodyEscudo = document.getElementById('tbody-escudo');
-    shields.map((e, i) => (
+    monsters.map((e, i) => (
         tbodyEscudo.innerHTML += `
             <tr>
                 <td class="dialog-img">
-                    <img class="img-60" src="${e.imagem}" />
+                    <img class="img-60" src="${e.img}" />
                 </td>
                 <td>
-                    <p>${e.nome}</p>
-                </td>
-                <td>
-                    <p>${e.defesa}</p>
+                    <p>${e.name}</p>
                 </td>
             </tr>
         `
@@ -65,14 +55,9 @@ liEscudos.addEventListener('click', () => {
         img.addEventListener('click', () => {
             modalImg.showModal();
             modalBody.innerHTML = `
-                <img class="img-modal" src="${shields[index].imagem}" />
+                <img class="img-modal" src="${monsters[index].img}" />
             `
         })
     });
     closeModal.addEventListener('click', () => modalImg.close())
 })
-
-
-
-
-

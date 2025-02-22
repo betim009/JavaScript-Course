@@ -2,7 +2,7 @@
     width: 100%;
     /* Largura total da div */
     min-height: 100vh;
-    background-image: url('wallpaper.png');
+    background-image: url('bg1.webp');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     /* Faz a imagem cobrir toda a div */

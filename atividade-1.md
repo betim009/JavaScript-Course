@@ -88,7 +88,7 @@ Crie um Set de categorias e tente adicionar um item duplicado.
 Exemplo de saída:
 
 ```javascript
-console.log([...categorias]);  // ['Eletrônicos', 'Roupas', 'Livros']
+console.log([...categorias]);  // ['Eletronicos', 'Roupas', 'Livros']
 ```
 
 ### 10. Objetos e Acesso
@@ -133,16 +133,16 @@ Crie um objeto onde as chaves são categorias e os valores são arrays de produt
 Exemplo de saída:
 
 ```javascript
-console.log(loja.Eletrônicos);  // ['Notebook', 'Celular']
+console.log(loja.Eletronicos);  // ['Notebook', 'Celular']
 ```
 
 ### 15. Acessando Dados em Estruturas Complexas
-Dado um objeto de produtos, exiba o preço do segundo item da categoria "Eletrônicos".
+Dado um objeto de produtos, exiba o preço do segundo item da categoria "Eletronicos".
 
 Exemplo de saída:
 
 ```javascript
-console.log(loja.Eletrônicos[1].preco);  // 1200.0
+console.log(loja.Eletronicos[1].preco);  // 1200.0
 ```
 
 ## Gabarito
@@ -205,9 +205,9 @@ console.log(cores[1]);  // "azul"
 
 ### 9:
 ```javascript
-let categorias = new Set(["Eletrônicos", "Roupas", "Livros"]);
+let categorias = new Set(["Eletronicos", "Roupas", "Livros"]);
 categorias.add("Roupas");
-console.log([...categorias]);  // ['Eletrônicos', 'Roupas', 'Livros']
+console.log([...categorias]);  // ['Eletronicos', 'Roupas', 'Livros']
 ```
 
 ### 10:
@@ -241,20 +241,20 @@ console.log(usuarios[1].nome);  // "Carlos"
 ``` javascript
 
 let loja = {
-    Eletrônicos: ["Notebook", "Celular"],
+    Eletronicos: ["Notebook", "Celular"],
     Móveis: ["Mesa", "Cadeira"]
 };
-console.log(loja.Eletrônicos);  // ['Notebook', 'Celular']
+console.log(loja.Eletronicos);  // ['Notebook', 'Celular']
 ```
 
 ### 15:
 ```javascript
 
 let loja = {
-    Eletrônicos: [
+    Eletronicos: [
         { produto: "Notebook", preco: 3500.0 },
         { produto: "Celular", preco: 1200.0 }
     ]
 };
-console.log(loja.Eletrônicos[1].preco);  // 1200.0
+console.log(loja.Eletronicos[1].preco);  // 1200.0
 ```

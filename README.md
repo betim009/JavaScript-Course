@@ -1,12 +1,11 @@
 # Javascript
 
+### Preparando o ambiente:
 
-### 0. Preparando o ambiente:
 - Editor online: https://playcode.io/new
 - VSCode (preferência)
 - Extensão: Code Runer, Live Server
 - Node js
-
 
 ### 1. Tipos de dados
 
@@ -21,9 +20,11 @@
 ### 6. DOM
 
 ## Projetos
+
 ### Projeto-Metros-Quadrados
-### Projeto Forms Soma Dois Números 
+
+### Projeto Forms Soma Dois Números
+
 ### Projeto Tela Login
+
 ### Projeto Toggle Darktheme
-
-

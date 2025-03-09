@@ -1,0 +1,10 @@
+{
+    "results": [
+        {
+            "id": 1,
+            "question": "Qual o nome do método que transforma uma string inteira para caixa alta?",
+            "alternatives": ["toUpperCase", "toLowerCase", "toCaseUpper", "toCaseLower"],
+             "answer": "toUpperCase"
+        }
+    ]
+}

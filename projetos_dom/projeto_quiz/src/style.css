@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+main {
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+#div-content {
+  width: 80%;
+}
+
+#div-send {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  justify-content: flex-end;
+
+  button {
+    margin-right: 2em;
+    background-color: rgb(6, 161, 6);
+    width: 10em;
+    height: 3em;
+    border-radius: 1em;
+    border: 2px solid white;
+  }
+}

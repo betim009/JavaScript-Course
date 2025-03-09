@@ -46,11 +46,16 @@ main {
     width: 10em;
     height: 3em;
     border-radius: 1em;
-    border: 2px solid white;
+    border: 1.3px solid white;
   }
 
   button:hover {
     cursor: pointer;
+  }
+
+  button:disabled {
+    background-color: rgba(6, 161, 6, 0.254);
+    cursor: default;
   }
 }
 

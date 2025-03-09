@@ -1,20 +1,33 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
 
 main {
   min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(31, 29, 29);
 }
 
 #div-content {
   width: 80%;
   height: 300px;
+  background-color: rgb(67, 67, 67);
+  display: grid;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 #div-bar {
   background-color: #ededed;
-  background: linear-gradient(to right, red 50%, blue 50%);
+  /* background: linear-gradient(to right, red 80%, blue 50%); */
   border-radius: 10px;
   height: 30px;
   display: flex;
@@ -24,7 +37,6 @@ main {
 
 #div-send {
   display: flex;
-  min-height: 100px;
   align-items: center;
   justify-content: flex-end;
 
@@ -42,7 +54,6 @@ main {
   }
 }
 
-
 .div-question {
-  padding: 10px;
+  /*  */
 }

@@ -27,12 +27,18 @@ main {
 
 #div-bar {
   background-color: #ededed;
-  /* background: linear-gradient(to right, red 80%, blue 50%); */
   border-radius: 10px;
   height: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+
+}
+
+#bar-progress {
+  background-color: rgb(6, 161, 6);
+  width: 20%;
+  border-radius: 10px;
+  height: 30px;
 }
 
 #div-send {

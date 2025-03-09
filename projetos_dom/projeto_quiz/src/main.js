@@ -3,10 +3,13 @@ import data from './api/data.json'
 
 const divQuestion = document.getElementById('div-questions')
 const divBar = document.getElementById('div-bar')
+const barProgress = document.getElementById('bar-progress')
 const btnSend = document.getElementById('btn-send')
 
 const { results } = data
 let count = 0
+let initColorBar = 20
+
 
 const createQuestions = () => {
   divQuestion.innerHTML = ""
@@ -34,5 +37,7 @@ btnSend.addEventListener('click', () => {
   if (count + 1 > 5) {
     return btnSend.disabled = true
   }
+  console.log(barProgress)
+  barProgress.style.width = `${initColorBar += 20}%`
   createQuestions()
 })

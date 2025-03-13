@@ -19,7 +19,7 @@ function maiorNota(notas) {
         }
     }
 
-    console.log(notas[resultadoIndex])
+    return notas[resultadoIndex]
 }
 
 // chamadas

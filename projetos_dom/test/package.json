@@ -1,5 +1,5 @@
 {
-  "name": "projeto_quiz",
+  "name": "test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,5 @@
   },
   "devDependencies": {
     "vite": "^6.2.0"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
   }
 }

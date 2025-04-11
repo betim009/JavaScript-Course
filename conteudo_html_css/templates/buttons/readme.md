@@ -1,55 +1,5 @@
 ### 🇺🇸 Buttons | Botões   
 
-<style>
-  .btn-1 {
-    width: 200px;
-    height: 30px;
-    font-weight: 600;
-    background-color: darkgray;
-    border: 1px solid black;
-    border-radius: 10px;
-    cursor:pointer;
-  }
-
-  .btn-classic {
-    width: 200px;
-    height: 30px;
-    font-weight: 600;
-    border: 1px solid black;
-    cursor:pointer;
-  }
-
-  .btn-blue {
-    background-color: blue;
-    color: white;
-  }
-
-  .btn-red {
-    background-color: red;
-    color: white;
-  }
-
-  .btn-green {
-    background-color: green;
-    color: white;
-  }
-
-  .btn-cart {
-    width: 30px;
-    height: 30px;
-    background-color: darkgray;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-  }
-
-  .flex {
-    display: flex;
-    gap: 10px;
-  }
-</style>
-
-
 **Exemplo de código:**
 
 1. Exemplo simples
@@ -89,7 +39,8 @@
 
 **Saída:**
 
-  <button class="btn-1">login</button>
+  <button style="width:200px; height:30px; font-weight:600; background-color:darkgray; border:1px solid black; border-radius:10px; cursor:pointer;">login</button>
+
 
 ----
 
@@ -131,9 +82,10 @@
 
 **Saída:**
 
-  <button class="btn-classic btn-blue">login</button>
-  <button class="btn-classic btn-green">login</button>
-  <button class="btn-classic btn-red">login</button>
+  <button style="width:200px; height:30px; font-weight:600; border:1px solid black; cursor:pointer; background-color:blue; color:white;">exemplo 1</button>
+  <button style="width:200px; height:30px; font-weight:600; border:1px solid black; cursor:pointer; background-color:green; color:white;">exemplo 2</button>
+  <button style="width:200px; height:30px; font-weight:600; border:1px solid black; cursor:pointer; background-color:red; color:white;">exemplo 3</button>
+
 
 ----
 
@@ -167,10 +119,10 @@
 
 **Saída:**
 
-  <div class="flex">
-    <button class="btn-cart">+</button>
+  <div style="display:flex; gap:10px;">
+    <button style="width:30px; height:30px; background-color:darkgray; font-weight:600; border:none; cursor:pointer;">+</button>
     <p>3</p>
-    <button class="btn-cart">-</button>
+    <button style="width:30px; height:30px; background-color:darkgray; font-weight:600; border:none; cursor:pointer;">-</button>
   </div>
 
 ----

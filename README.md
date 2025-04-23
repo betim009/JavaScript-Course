@@ -10,7 +10,7 @@
 - [x] Comentários
 
 ## JavaScript - Variáveis, Let, Const & Tipos de Dados - [🔒]
-- [ ] Variáveis
+- [x] Variáveis
 - [ ] Let
 - [ ] Const
 - [ ] Tipos de Dados

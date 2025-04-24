@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: darkgray;
+            height: 40px;
+        }
+
+        .div-1,
+        .div-2 {
+            background-color: whitesmoke;
+            border: 1px solid black;
+            height: 100vh;
+        }
+
+        .div-1 {
+            display: flex;
+            justify-content: center;
+            background-image: url('./banner.png');
+            background-size: cover;
+            /* Faz a imagem cobrir toda a div */
+            background-position: center;
+            /* Centraliza a imagem */
+            background-repeat: no-repeat;
+            /* Impede que a imagem se repita */
+        }
+
+        .content {
+            width: 80%;
+            height: 100vh;
+        }
+
+        .span {
+            display: flex;
+            justify-content: end;
+            height: 100vh;
+
+            div {
+                height: 200px;
+                width: 200px;
+                margin-top: 80vh;
+
+                img {
+                    height: 200px;
+                }
+            }
+        }
+
+        .div-2 {
+            background-image: url('./robo.png');
+
+            background-size: 100px; 
+            /* Faz a imagem cobrir toda a div */
+            background-position: bottom;
+            /* Centraliza a imagem */
+            background-repeat: no-repeat;
+            /* Impede que a imagem se repita */
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="div-1">
+            <div class="content">
+
+                <div class="span">
+                    <div>
+                        <img src="robo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-2">
+
+        </div>
+    </main>
+
+</body>
+
+</html>

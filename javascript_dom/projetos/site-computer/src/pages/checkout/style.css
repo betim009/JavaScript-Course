@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  img {
+    width: 180px;
+    
+  }
+
+
+#app {
+  margin-left: 2%;
+}
+
+#button {
+  display: block;
+  margin-right: 10px;
+  margin-top: 20px;
+}

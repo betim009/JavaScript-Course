@@ -190,3 +190,6 @@ console.log(loja.produtos[0].nome);  // Notebook
 * **Use strings** para armazenar textos e nomes.
 * **Use números inteiros e decimais** para cálculos e preços.
 * **Use booleanos** para representar verdadeiro ou falso.
+
+
+**[ir para o próximo conteúdo](https://github.com/betim009/meu_curso_javascript/blob/main/conteudo_js/conteudos/0_intro/readme_2.md)**

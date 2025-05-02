@@ -39,7 +39,7 @@ Seja muito bem-vindo(a)! Este repositório é dedicado ao ensino de **JavaScript
 
 - 🔍 [1 - Seletores](https://github.com/betim009/meu_curso_javascript/tree/main/javascript_dom/1_seletores)
 - 🧱 [2 - Criação e Manipulação de Elementos](https://github.com/betim009/meu_curso_javascript/blob/main/javascript_dom/2_createElements/readme.md)
-- 🧠 [3 - Eventos](#)
+- 🧠 [3 - Eventos](https://github.com/betim009/meu_curso_javascript/tree/main/javascript_dom/3_eventos)
 - 🎨 [4 - Estilos](#)
 - 📥 [5 - Formulários](#)
 

@@ -5,7 +5,7 @@ Este repositório contém um curso completo de **JavaScript para iniciantes**, c
 
 ---
 
-## 📚 Sumário
+## 📚 Sumário de javascript
 
 * [0 - Introdução e guia rápido](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/0_intro)
 * [1 - Tipos de dados](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/1_dados)
@@ -16,11 +16,22 @@ Este repositório contém um curso completo de **JavaScript para iniciantes**, c
     
 * [2 - Arrays e estruturas de repetição](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/2_arrays-loops)
 * [3 - Funções](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/3_funcoes)
-    - [3.1 - Funções Assíncronas](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/3_funcoes)
+    - [3.1 - Funções Assíncronas](https://github.com/betim009/meu_curso_javascript/blob/main/conteudo_js/conteudos/3_funcoes/readme_async.md)
 * [4 - Objetos](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/4_objetos)
 * [5 - JSON](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/5_json)
 * [6 - Classes](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/6_classes)
 
 ---
 
-📌 Este sumário será atualizado com novos módulos conforme o curso evolui.
+## 📚 Sumário de javascript
+
+* [1 - Seletores](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/1_dados)
+* [2 - Criação e Manipulação](https://github.com/betim009/meu_curso_javascript/tree/main/conteudo_js/conteudos/2_arrays-loops)
+* [3 - Eventos](#)
+* [4 - Estilos](#)
+* [5 - Formulários](#)
+---
+
+
+
+📌 Este material será atualizado com novos módulos conforme o curso evolui.

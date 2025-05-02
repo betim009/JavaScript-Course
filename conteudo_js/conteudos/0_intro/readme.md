@@ -192,4 +192,4 @@ console.log(loja.produtos[0].nome);  // Notebook
 * **Use booleanos** para representar verdadeiro ou falso.
 
 
-**[ir para o próximo conteúdo](https://github.com/betim009/meu_curso_javascript/blob/main/conteudo_js/conteudos/0_intro/readme_2.md)**
+**[⏭️ Próximo](https://github.com/betim009/meu_curso_javascript/blob/main/conteudo_js/conteudos/0_intro/readme_2.md)**

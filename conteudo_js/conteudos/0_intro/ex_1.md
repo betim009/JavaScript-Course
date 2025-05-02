@@ -258,3 +258,6 @@ let loja = {
 };
 console.log(loja.Eletronicos[1].preco);  // 1200.0
 ```
+
+--------
+**[⏭️ Próximo](https://github.com/betim009/meu_curso_javascript/blob/main/conteudo_js/conteudos/0_intro/ex_2.md)**

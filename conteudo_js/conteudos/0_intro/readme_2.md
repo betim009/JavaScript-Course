@@ -218,3 +218,6 @@ switch (dia) {
 ```
 
 Escolher a estrutura condicional correta torna o código mais organizado e eficiente!
+
+---------
+**[⏭️ Próximo](https://github.com/betim009/meu_curso_javascript/blob/main/conteudo_js/conteudos/0_intro/ex_1.md)**

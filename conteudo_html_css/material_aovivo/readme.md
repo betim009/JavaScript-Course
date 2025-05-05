@@ -24,13 +24,11 @@ Utilizamos um programa chamado **VS Code** (Visual Studio Code).
 - Ali você vê as **pastas** e **arquivos** do seu projeto.
 - O arquivo principal de uma página HTML normalmente se chama `index.html`.
 
-![alt text](image.png)
 
 ### 2. Área de Código (imagem 2)
 - Acima fica uma **ABA** com o nome do arquivo aberto.
 - Abaixo da aba, você digita seu **código HTML**.
 
-![alt text](image-1.png)
 
 ---
 

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header {
+    height: 160px;
+    background-color: #ffde59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.titulo {
+
+    font-size: 40px;
+
+}
+
+.botao {
+    text-decoration: none;
+    font-size: 27px;
+    cursor: pointer;
+    height: 36px;
+    width: 140px;
+    background-color: #eac42c;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #e0a615;
+}
+
+.borda {
+
+    background-image: url("borda.png");
+    height: 20px;
+    background-color: rgb(17, 17, 15);
+    background-size: contain;
+}
+
+main {
+    height: 800px;
+    width: 100%;
+    background-color: rgb(17, 17, 15);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+
+}
+
+
+
+.explicacao {
+
+    color: azure;
+    text-align: justify;
+    width: 1000px;
+    font-size: 35px;
+}
+
+.logosuper {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.botaomain {
+
+    text-decoration: none;
+    font-size: 27px;
+    cursor: pointer;
+    height: 40px;
+    width: 300px;
+    background-color: #eac42c;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: background-color 0.3s;
+
+}
+
+.botoesmain {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.botaomain:hover {
+    background-color: #e0a615;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 25px;
+
+}
+
+.botaofooter {
+
+    display: flex;
+    gap: 15px;
+
+}
+
+.botao2 {
+
+    color: black;
+}
+
+
+.botao2:hover {
+
+    color: rgb(72, 73, 67);
+
+}
+
+
+footer {
+    height: 160px;
+    width: 100%;
+    background-color: #ffde59;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

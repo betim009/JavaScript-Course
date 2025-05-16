@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+#container-1 {
+    background-color: rgb(155, 209, 233);
+    display: flex;
+    justify-content: center;
+
+    div {
+        display: flex;
+        width: 80%;
+    }
+}
+
+#container-2 {
+    background-color: red;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.my-btn {
+    width: 120px;
+}
+
+.title {
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}

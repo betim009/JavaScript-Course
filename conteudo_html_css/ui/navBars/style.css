@@ -99,6 +99,7 @@
       position: absolute;
       right: 0;
       top: 0;
+      transition: 5s;
     }
     .topnav.responsive a {
       float: none;

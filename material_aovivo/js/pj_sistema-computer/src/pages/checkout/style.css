@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 180px;
+}
+
+button:hover {
+  background-color: #454ea0;
+}
+
+.button-adicionar {
+  width: 160px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #4c57af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+
+.button-checkout {
+  width: 30px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #4c57af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#app {
+  margin-left: 2%;
+}
+
+#button {
+  display: block;
+  margin-right: 10px;
+  margin-top: 20px;
+}

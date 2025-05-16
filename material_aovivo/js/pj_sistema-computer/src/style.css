@@ -1,0 +1,21 @@
+header {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.my-card {
+    width: 300px;
+    height: 540px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+ 
+
+}
+
+.row {
+    margin-top: 80px;
+
+}

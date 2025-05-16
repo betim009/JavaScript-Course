@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container py-5" id="register">
+        <div class="bg-white p-5 rounded shadow-sm mx-auto" style="max-width: 600px;">
+            <h2 class="mb-3 text-center">Crie sua conta</h2>
+            <p class="text-muted text-center mb-4">Registro de sistema para Manutenção de computadores</p>
+
+            <form id="register-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome Completo:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Digite seu nome completo"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(99) 99999-9999"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="comment" class="form-label">Observação:</label>
+                    <textarea id="comment" name="comment" class="form-control" placeholder="Deixe seu comentário"
+                        required></textarea>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+   <script type="module" src="contact.js"></script>
+</body>
+
+</html>

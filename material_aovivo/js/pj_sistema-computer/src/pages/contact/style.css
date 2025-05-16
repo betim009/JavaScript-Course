@@ -1,0 +1,13 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h2 {
+    font-weight: 600;
+    color: #0d6efd; /* azul Bootstrap */
+  }
+  
+  textarea {
+    resize: none;
+  }

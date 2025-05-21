@@ -41,7 +41,7 @@ console.log()
 /*
 
 Fazer um array parecido com o acima, só que em vez de nome é email.
-em vez de contrar por nome é por email
+em vez de econtrar por nome é por email
 
 
 

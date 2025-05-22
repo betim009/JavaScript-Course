@@ -1,47 +1,185 @@
-# Meu Curso de React 🚀
 
-Este repositório contém o material prático do meu curso de React. Cada pasta representa um conteúdo essencial, separado por temas, para facilitar o aprendizado passo a passo.
+# 📚 Eventos no DOM com JavaScript Vanilla
 
-> ⚠️ **Aviso:** Este repositório está em constante atualização e pode sofrer mudanças frequentes à medida que o conteúdo evolui.
+## ✨ O que são Eventos no DOM?
 
-## 📚 Sumário
+Eventos são ações que ocorrem no navegador — como um clique, um carregamento
+de página, ou uma digitação. Em JavaScript, podemos **"ouvir" esses eventos**
+e executar algum código quando eles acontecem.
 
-1. [Formulários](https://github.com/betim009/meu_curso_react/tree/main/conteudos/01_forms)  
-   Aprenda a lidar com inputs, eventos e estados controlados.
-
-2. [UseEffect](https://github.com/betim009/meu_curso_react/tree/main/conteudos/02_useEffects)  
-   Entenda como usar efeitos colaterais, como requisições e timers, dentro de componentes funcionais.
-
-3. [Hooks Customizados](https://github.com/betim009/meu_curso_react/tree/main/conteudos/03_customHooks)  
-   Crie seus próprios hooks reutilizáveis para organizar melhor a lógica dos seus componentes.
-
-4. [Context API e Provider](https://github.com/betim009/meu_curso_react/tree/main/conteudos/04_contextProvider)  
-   Compartilhe estados globais entre componentes de forma prática e escalável.
+Exemplo: quando o usuário clica em um botão, podemos mostrar uma mensagem.
 
 ---
 
-## 💡 Como usar
+## 📌 Como ouvir eventos?
 
-Você pode clonar o projeto e acessar cada pasta individualmente para estudar os exemplos.
+Usamos o método `addEventListener`:
 
-```bash
-git clone https://github.com/betim009/meu_curso_react.git
-cd meu_curso_react/conteudos/01_forms
+```javascript
+elemento.addEventListener("evento", funcao);
 ```
 
 ---
 
-## 🧑‍🏫 Público-alvo
+## 🖱️ Evento `click`
 
-Este curso é voltado para **iniciantes** com noções básicas de HTML, CSS e JavaScript que desejam começar a aprender React de forma prática e objetiva.
+### ✅ Quando usar?
+Quando queremos executar algo ao clicar em um botão, imagem, link etc.
+
+### 💡 Exemplo:
+
+```html
+<button id="meuBotao">Clique aqui</button>
+<p id="mensagem"></p>
+
+<script>
+  const botao = document.getElementById("meuBotao");
+  const mensagem = document.getElementById("mensagem");
+
+  botao.addEventListener("click", () => {
+    mensagem.textContent = "Você clicou no botão!";
+  });
+</script>
+```
 
 ---
 
-## 📬 Contato
+## 🎯 Evento `input`
 
-Dúvidas, sugestões ou feedbacks?  
-Me chama no [Instagram](https://instagram.com/albertofernandescouto) ou pelo [LinkedIn](https://www.linkedin.com/in/albertocouto).
+### ✅ Quando usar?
+Sempre que o conteúdo de um campo de texto mudar (a cada tecla digitada).
+
+### 💡 Exemplo:
+
+```html
+<input type="text" id="nome">
+<p>Você digitou: <span id="saida"></span></p>
+
+<script>
+  const nome = document.getElementById("nome");
+  const saida = document.getElementById("saida");
+
+  nome.addEventListener("input", () => {
+    saida.textContent = nome.value;
+  });
+</script>
+```
 
 ---
 
-Feito com ❤️ por [Alberto Couto](https://github.com/betim009)
+## 🔄 Evento `change`
+
+### ✅ Quando usar?
+Quando o valor de um campo for alterado **e o usuário sair do campo**.
+
+### 💡 Exemplo:
+
+```html
+<select id="cor">
+  <option value="vermelho">Vermelho</option>
+  <option value="azul">Azul</option>
+  <option value="verde">Verde</option>
+</select>
+
+<p id="escolha"></p>
+
+<script>
+  const select = document.getElementById("cor");
+  const escolha = document.getElementById("escolha");
+
+  select.addEventListener("change", () => {
+    escolha.textContent = `Cor escolhida: ${select.value}`;
+  });
+</script>
+```
+
+---
+
+## 🌐 Evento `load`
+
+### ✅ Quando usar?
+Quando queremos fazer algo **assim que a página for carregada**.
+
+### 💡 Exemplo:
+
+```html
+<body>
+  <h1>Página carregando...</h1>
+
+  <script>
+    window.addEventListener("load", () => {
+      alert("A página foi carregada!");
+    });
+  </script>
+</body>
+```
+
+---
+
+## ⚠️ Dicas e Cuidados
+
+- O `click` acontece com qualquer botão, imagem ou elemento clicável.
+- O `input` é mais imediato que o `change` (detecta cada letra digitada).
+- O `change` só acontece quando o campo perde o foco.
+- O `load` deve ser usado com `window` ou `document`.
+
+---
+
+## 🧪 Exercício Proposto
+
+Crie uma página com:
+
+1. Um campo de texto que exibe o que está sendo digitado (`input`)
+2. Um campo select que mostra a cor escolhida (`change`)
+3. Um botão que mostra um alerta (`click`)
+4. Uma mensagem automática ao carregar a página (`load`)
+
+---
+
+## ✅ Gabarito do Exercício
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos no DOM</title>
+</head>
+<body>
+  <h1>Eventos em JavaScript</h1>
+
+  <input type="text" id="campoTexto" placeholder="Digite algo...">
+  <p>Texto: <span id="textoDigitado"></span></p>
+
+  <select id="seletorCor">
+    <option value="azul">Azul</option>
+    <option value="vermelho">Vermelho</option>
+    <option value="amarelo">Amarelo</option>
+  </select>
+  <p id="corSelecionada"></p>
+
+  <button id="botaoAlerta">Clique aqui</button>
+
+  <script>
+    window.addEventListener("load", () => {
+      alert("Bem-vindo à página!");
+    });
+
+    document.getElementById("campoTexto").addEventListener("input", (e) => {
+      document.getElementById("textoDigitado").textContent = e.target.value;
+    });
+
+    document.getElementById("seletorCor").addEventListener("change", (e) => {
+      document.getElementById("corSelecionada").textContent = "Cor: " + e.target.value;
+    });
+
+    document.getElementById("botaoAlerta").addEventListener("click", () => {
+      alert("Você clicou no botão!");
+    });
+  </script>
+</body>
+</html>
+```
+
+---
+
+Pratique bastante e tente modificar os exemplos para criar interações diferentes!

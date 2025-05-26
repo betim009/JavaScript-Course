@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#cenario {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background-image: url('mapa.png'); /* imagem do mapa */
+  background-size: cover;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+
+#personagem {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 64px;
+  height: 64px;
+}

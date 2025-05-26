@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.g1 {
+  color: blue;
+  font-weight: 700;
+}
+
+.g2 {
+  color: aqua;
+  font-weight: 700;
+}
+
+.g3 {
+  color: green;
+  font-weight: 700;
+}
+
+.g4 {
+  color: darkgray;
+  font-weight: 700;
+}
+
+.g5 {
+  color: red;
+  font-weight: 700;
+}
+
+.table-campeonato {
+  width: 50%;
+}

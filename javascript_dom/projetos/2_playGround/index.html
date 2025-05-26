@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <style>
-      .personagem {
-        width: 120px;
-        height: 120px;
-      }
-    </style>
+    <title>Jogo 2D Zelda</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="./personagem.png" alt="" class="personagem" id="id-personagem" />
+    <div id="cenario">
+      <img src="personagem.png" id="personagem" alt="Herói" />
+    </div>
 
-    <!-- Voce vai escrever javascript  -->
     <script>
-      var person = document.getElementById("id-personagem");
+      const personagem = document.getElementById("personagem");
 
-      var right = 0;
-      var down = 0;
+      // posição inicial
+      let posX = 0;
+      let posY = 0;
+      const passo = 10;
+      const limiteX = 800 - 64; // largura do cenario - tamanho do personagem
+      const limiteY = 600 - 64;
 
       window.addEventListener("keydown", function (event) {
-        console.log(event);
-        if (event.key === "ArrowRight") {
-          right += 10;
-          person.style.marginLeft = `${right}px`;
-        } else if (event.key === "ArrowLeft") {
-          if (right === 0) {
-            return null;
-          }
-          right -= 10;
-          person.style.marginLeft = `${right}px`;
-        } else if (event.key === "ArrowDown") {
-          down += 10;
-          person.style.marginTop = `${down}px`;
-        } else if (event.key === "ArrowUp") {
-          down -= 10;
-          person.style.marginTop = `${down}px`;
+        switch (event.key) {
+          case "ArrowRight":
+            if (posX + passo <= limiteX) posX += passo;
+            break;
+          case "ArrowLeft":
+            if (posX - passo >= 0) posX -= passo;
+            break;
+          case "ArrowDown":
+            if (posY + passo <= limiteY) posY += passo;
+            break;
+          case "ArrowUp":
+            if (posY - passo >= 0) posY -= passo;
+            break;
         }
+
+        personagem.style.left = `${posX}px`;
+        personagem.style.top = `${posY}px`;
       });
     </script>
   </body>

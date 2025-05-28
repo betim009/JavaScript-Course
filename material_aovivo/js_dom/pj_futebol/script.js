@@ -9,7 +9,10 @@ for (const time of tabelaCampeonato) {
   tBodyTimes.innerHTML += `
         <tr>
             <td>${time.pos}</td>
-            <td>${time.time}</td>
+            <td>
+                <img src="${time.imagem}">
+                ${time.time}
+            </td>
             <td>${time.J}</td>
             <td>${time.V}</td>
             <td>${time.E}</td>

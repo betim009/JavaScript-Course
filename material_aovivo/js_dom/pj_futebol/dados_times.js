@@ -9,6 +9,7 @@ export const tabelaCampeonato = [
     V: 5,
     E: 2,
     D: 2,
+    imagem: "https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png"
   },
   {
     pos: 2,

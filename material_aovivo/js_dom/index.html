@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="titulo"></p>
+
+    <button id="acrescentar">+</button>
+    <p id="resultado"></p>
+
+
+    <script>
+        // Seletores -> busca do HTML para o javascript
+        const textoTitulo = document.getElementById("titulo")
+        textoTitulo.textContent = "Minha amiga Luisa"
+
+        const botaoAcrescentar = document.getElementById("acrescentar")
+        const textoResultado = document.getElementById("resultado")
+
+        let numero = 10
+
+        botaoAcrescentar.addEventListener("click", function() {
+            numero += 1
+            textoResultado.textContent = numero
+        })
+
+        // VAI TENTAR FAZER UM BOTAO COM - MENOS
+        // E VAI DIMINUIR -1
+    </script>
+</body>
+</html>

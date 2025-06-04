@@ -1,10 +1,6 @@
-* {
-  margin: 0;
-}
-
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
 }
 
 th,
@@ -13,44 +9,60 @@ td {
   padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
 th {
-  background-color: #04aa6d;
+  background-color: #04AA6D;
   color: white;
 }
 
+
 .g1 {
-  color: blue;
+  background-color: rgb(165, 206, 227);
+  color: black;
   font-weight: 700;
+
 }
 
 .g2 {
-  color: aqua;
+  background-color: rgb(120, 204, 204);
+  color: black;
+  font-weight: 700;
+
+}
+
+
+.g3 {
+  background-color: rgb(90, 171, 90);
+  color: black;
   font-weight: 700;
 }
 
-.g3 {
-  color: green;
-  font-weight: 700;
-}
 
 .g4 {
   color: darkgray;
   font-weight: 700;
+
 }
 
 .g5 {
   color: red;
   font-weight: 700;
+
 }
 
-.table-campeonato {
-  width: 50%;
+.table-campeonato{
+width: 50%;
+
+} 
+
+
+img{
+  height: 19px;
+
 }
 
-img {
-  height: 18px;
+.flex{
+  display: flex; 
+  gap: 20px;
+
+
 }

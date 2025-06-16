@@ -6,94 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raciocínio Médico da Emergência</title>
 
+    <!-- NAO ESQUECA DAQUI ABAIXO -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
+
+    <style>
+        .btn-outline-primary {
+            margin-bottom: 10px;
+            width: 200px;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #0d6efd !important;
+            color: white !important;
+        }
+    </style>
+     <!-- NAO ESQUECA DAQUI ACIMA -->
 </head>
 
+<!-- Container para centralizar -->
+
 <body class="container">
-    <h2>Local da Dor</h2>
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Local da Dor</h2>
+            <p>Texto sobre o local da dor</p>
+        </div>
 
-    <form id="local-dor">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="flanco_direito" id="flanco_direito"
-                value="flanco_direito">
-            <label class="form-check-label" for="flanco_direito">Flanco direito</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="flanco_esquerdo" id="flanco_esquerdo"
-                value="flanco_esquerdo">
-            <label class="form-check-label" for="flanco_esquerdo">Flanco esquerdo</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="fossa_iliaca_direita" id="fossa_iliaca_direita"
-                value="fossa_iliaca_direita">
-            <label class="form-check-label" for="fossa_iliaca_direita">Fossa ilíaca direita</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="fossa_iliaca_esquerda" id="fossa_iliaca_esquerda"
-                value="fossa_iliaca_esquerda">
-            <label class="form-check-label" for="fossa_iliaca_esquerda">Fossa ilíaca esquerda</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="hipocondrio_direito" id="hipocondrio_direito"
-                value="hipocondrio_direito">
-            <label class="form-check-label" for="hipocondrio_direito">Hipocôndrio direito</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="hipocondrio_esquerdo" id="hipocondrio_esquerdo"
-                value="hipocondrio_esquerdo">
-            <label class="form-check-label" for="hipocondrio_esquerdo">Hipocôndrio esquerdo</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="regiao_epigastrica" id="regiao_epigastrica"
-                value="regiao_epigastrica">
-            <label class="form-check-label" for="regiao_epigastrica">Região epigástrica</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="regiao_hipogastrica" id="regiao_hipogastrica"
-                value="regiao_hipogastrica">
-            <label class="form-check-label" for="regiao_hipogastrica">Região hipogástrica</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="regiao_mesogastrica" id="regiao_mesogastrica"
-                value="regiao_mesogastrica">
-            <label class="form-check-label" for="regiao_mesogastrica">Região mesogástrica</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="difusa" id="difusa" value="difusa">
-            <label class="form-check-label" for="difusa">Difusa</label>
-        </div>
-    </form>
+        <div class="col-lg-8 col-sm-12">
+            <form id="local-dor">
+                <input type="checkbox" class="btn-check" id="flanco_direito" name="flanco_direito"
+                    value="flanco_direito" autocomplete="off">
+                <label class="btn btn-outline-primary" for="flanco_direito">Flanco direito</label><br>
 
-    <h2>Intensidade da Dor</h2>
+                <input type="checkbox" class="btn-check" id="flanco_esquerdo" name="flanco_esquerdo"
+                    value="flanco_esquerdo" autocomplete="off">
+                <label class="btn btn-outline-primary" for="flanco_esquerdo">Flanco esquerdo</label><br>
 
-    <form id="intensidade-dor">
-        <input type="checkbox" name="fraca" id="" value="fraca">
-        <label for="">Fraca</label>
-        <input type="checkbox" name="media" id="" value="media">
-        <label for="">Média</label>
-        <input type="checkbox" name="forte" id="" value="forte">
-        <label for="">Forte</label>
-    </form>
+                <input type="checkbox" class="btn-check" id="fossa_iliaca_direita" name="fossa_iliaca_direita"
+                    value="fossa_iliaca_direita" autocomplete="off">
+                <label class="btn btn-outline-primary" for="fossa_iliaca_direita">Fossa ilíaca direita</label><br>
 
-    <h2>Características do Início da Dor</h2>
+                <input type="checkbox" class="btn-check" id="fossa_iliaca_esquerda" name="fossa_iliaca_esquerda"
+                    value="fossa_iliaca_esquerda" autocomplete="off">
+                <label class="btn btn-outline-primary" for="fossa_iliaca_esquerda">Fossa ilíaca esquerda</label><br>
 
-    <form id="caracteristicas-inicio">
-        <input type="checkbox" name="desconforto" id="" value="desconforto">
-        <label for="">Desconforto</label>
-        <input type="checkbox" name="migratoria" id="" value="migratoria">
-        <label for="">Migratória</label>
-        <input type="checkbox" name="progressiva" id="" value="progressiva">
-        <label for="">Progressiva</label>
-        <input type="checkbox" name="referida" id="" value="referida">
-        <label for="">Referida</label>
-        <input type="checkbox" name="subita" id="" value="subita">
-        <label for="">Súbita</label>
-    </form>
+                <input type="checkbox" class="btn-check" id="hipocondrio_direito" name="hipocondrio_direito"
+                    value="hipocondrio_direito" autocomplete="off">
+                <label class="btn btn-outline-primary" for="hipocondrio_direito">Hipocôndrio direito</label><br>
+
+                <input type="checkbox" class="btn-check" id="hipocondrio_esquerdo" name="hipocondrio_esquerdo"
+                    value="hipocondrio_esquerdo" autocomplete="off">
+                <label class="btn btn-outline-primary" for="hipocondrio_esquerdo">Hipocôndrio esquerdo</label><br>
+
+                <input type="checkbox" class="btn-check" id="regiao_epigastrica" name="regiao_epigastrica"
+                    value="regiao_epigastrica" autocomplete="off">
+                <label class="btn btn-outline-primary" for="regiao_epigastrica">Região epigástrica</label><br>
+
+                <input type="checkbox" class="btn-check" id="regiao_hipogastrica" name="regiao_hipogastrica"
+                    value="regiao_hipogastrica" autocomplete="off">
+                <label class="btn btn-outline-primary" for="regiao_hipogastrica">Região hipogástrica</label><br>
+
+                <input type="checkbox" class="btn-check" id="regiao_mesogastrica" name="regiao_mesogastrica"
+                    value="regiao_mesogastrica" autocomplete="off">
+                <label class="btn btn-outline-primary" for="regiao_mesogastrica">Região mesogástrica</label><br>
+
+                <input type="checkbox" class="btn-check" id="difusa" name="difusa" value="difusa" autocomplete="off">
+                <label class="btn btn-outline-primary" for="difusa">Difusa</label><br>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h2>Intensidade da Dor</h2>
+            <p>Texto sobre intensidade da dor...</p>
+        </div>
+
+        <div class="col">
+            <form id="intensidade-dor" class="gap-3">
+                <input type="checkbox" class="btn-check" id="fraca" name="fraca" value="fraca" autocomplete="off">
+                <label class="btn btn-outline-primary" for="fraca">Fraca</label><br>
+
+                <input type="checkbox" class="btn-check" id="media" name="media" value="media" autocomplete="off">
+                <label class="btn btn-outline-primary" for="media">Média</label><br>
+
+                <input type="checkbox" class="btn-check" id="forte" name="forte" value="forte" autocomplete="off">
+                <label class="btn btn-outline-primary" for="forte">Forte</label><br>
+            </form>
+        </div>
+    </div>
+
+
+    </div>
+
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h2>Características do Início da Dor</h2>
+            <p>Texto sobre as características do início da dor...</p>
+        </div>
+
+        <div class="col">
+            <form id="caracteristicas-inicio" class="gap-3">
+
+                <input type="checkbox" class="btn-check" id="desconforto" name="desconforto" value="desconforto"
+                    autocomplete="off">
+                <label class="btn btn-outline-primary" for="desconforto">Desconforto</label><br>
+
+                <input type="checkbox" class="btn-check" id="migratoria" name="migratoria" value="migratoria"
+                    autocomplete="off">
+                <label class="btn btn-outline-primary" for="migratoria">Migratória</label><br>
+
+                <input type="checkbox" class="btn-check" id="progressiva" name="progressiva" value="progressiva"
+                    autocomplete="off">
+                <label class="btn btn-outline-primary" for="progressiva">Progressiva</label><br>
+
+                <input type="checkbox" class="btn-check" id="referida" name="referida" value="referida"
+                    autocomplete="off">
+                <label class="btn btn-outline-primary" for="referida">Referida</label><br>
+
+                <input type="checkbox" class="btn-check" id="subita" name="subita" value="subita" autocomplete="off">
+                <label class="btn btn-outline-primary" for="subita">Súbita</label><br>
+
+            </form>
+        </div>
+    </div>
+
 
 
     <h2>Dor Referida</h2>

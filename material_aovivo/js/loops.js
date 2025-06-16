@@ -21,6 +21,7 @@ const movies = [
         poster: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg"
     }
 ]
+
 /*
 // Para cada elemento do meu array movies
 for (const element of movies) {

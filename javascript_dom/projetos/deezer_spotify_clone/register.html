@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar - Deezer Clone</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 p-8 rounded text-white w-full max-w-sm">
+    <h1 class="text-2xl mb-4 text-center">Registrar</h1>
+    <form id="registerForm" class="flex flex-col gap-4" onsubmit="registerAccount(event)">
+      <input type="text" id="name" placeholder="Nome" class="p-2 rounded text-black">
+      <input type="email" id="email" placeholder="E-mail" class="p-2 rounded text-black">
+      <input type="password" id="password" placeholder="Senha" class="p-2 rounded text-black">
+      <button class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded" type="submit">Registrar</button>
+    </form>
+    <p class="text-center mt-4">
+      <a href="index.html" class="text-green-400 hover:underline">Voltar para login</a>
+    </p>
+  </div>
+  <script src="js/register.js"></script>
+</body>
+</html>

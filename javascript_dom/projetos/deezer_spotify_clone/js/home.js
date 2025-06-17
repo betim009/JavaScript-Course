@@ -3,13 +3,13 @@ function renderTracks(tracks, containerId, removable = false) {
   container.innerHTML = '';
   for (const track of tracks) {
     const div = document.createElement('div');
-    div.className = 'bg-gray-800 rounded p-4 flex flex-col';
+    div.className = 'bg-cyan-800 text-white rounded p-4 flex flex-col';
     div.innerHTML = `
       <img src="${track.album.cover_medium}" alt="${track.title}" class="mb-2 rounded">
       <p class="font-semibold">${track.title}</p>
-      <p class="text-sm text-gray-400">${track.artist.name}</p>
+      <p class="text-sm text-cyan-200">${track.artist.name}</p>
       <audio controls class="w-full mt-2" src="${track.preview}"></audio>
-      <button class="mt-2 bg-yellow-500 text-black p-1 rounded favorite-btn">${removable ? 'Remover' : 'Favoritar'}</button>
+      <button class="mt-2 bg-cyan-200 text-black p-1 rounded favorite-btn flex items-center gap-1">${removable ? '<i class="bi bi-trash"></i> Remover' : '<i class="bi bi-heart"></i> Favoritar'}</button>
     `;
     const btn = div.querySelector('.favorite-btn');
     btn.addEventListener('click', () => {

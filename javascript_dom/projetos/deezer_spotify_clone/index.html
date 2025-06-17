@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Deezer Clone</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 p-8 rounded text-white w-full max-w-sm">
+    <h1 class="text-2xl mb-4 text-center">Login</h1>
+    <form id="loginForm" class="flex flex-col gap-4" onsubmit="validateLogin(event)">
+      <input type="email" id="email" placeholder="E-mail" class="p-2 rounded text-black">
+      <input type="password" id="password" placeholder="Senha" class="p-2 rounded text-black">
+      <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded" type="submit">Entrar</button>
+    </form>
+    <p class="text-center mt-4">
+      <a href="register.html" class="text-green-400 hover:underline">Criar conta</a>
+    </p>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>

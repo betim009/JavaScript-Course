@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado da Busca</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="bg-gray-800 p-4 flex justify-between">
+    <h1 class="text-xl font-bold">Deezer Clone</h1>
+    <nav class="flex gap-4">
+      <a href="home.html" class="text-green-400 hover:underline">Home</a>
+      <a href="favorites.html" class="text-yellow-300 hover:underline">Favoritos</a>
+      <a href="index.html" class="text-red-400 hover:underline">Sair</a>
+    </nav>
+  </header>
+  <main class="p-4">
+    <h2 class="text-2xl mb-4" id="searchTitle"></h2>
+    <div id="results" class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+  </main>
+  <script src="js/home.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

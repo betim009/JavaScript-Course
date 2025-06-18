@@ -1,50 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escala de Katz</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <title>Escala de Katz - Avaliação de AVD</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+<body>
+  <nav class="navbar navbar-expand-lg my-navbar bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">Escala de Katz</a>
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="bi bi-heart-pulse text-primary"></i> Calculadoras Médicas
+      </a>
+      <nav class="navbar-nav">
+        <a class="nav-link active fw-semibold" href="#" id="nav-katz">
+          <i class="bi bi-clipboard2-pulse"></i> Escala de Katz
+        </a>
+        <a class="nav-link fw-semibold" href="#" id="nav-lawton">
+          <i class="bi bi-clipboard2-check"></i> Escala de Lawton
+        </a>
+      </nav>
     </div>
   </nav>
 
-  <main class="container my-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="card shadow-sm mb-4">
-          <div class="card-body">
-            <h2 class="text-center text-primary">ESCALA DE KATZ</h2>
-            <h4 class="text-center mb-4">Avaliação de Atividades da Vida Diária</h4>
-            <p>Bem-vindo ao aplicativo de avaliação da Escala de Katz! Este aplicativo permite realizar a avaliação da capacidade funcional de um paciente utilizando a Escala de Katz para Atividades da Vida Diária (AVD).</p>
-            <p>Sobre a Escala de Katz. A Escala de Katz é um instrumento de avaliação funcional amplamente utilizado na área da saúde para medir a independência em atividades da vida diária (AVD) em idosos e pacientes com condições crônicas. Desenvolvida por Sidney Katz em 1963, esta escala avalia seis funções básicas:</p>
-            <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item">Comer</li>
-              <li class="list-group-item">Vestir</li>
-              <li class="list-group-item">Tomar banho</li>
-              <li class="list-group-item">Transferência</li>
-              <li class="list-group-item">Ir ao banheiro</li>
-              <li class="list-group-item">Continência</li>
-            </ul>
-            <div class="bg-light p-4 rounded">
-              <h5>Importância Clínica</h5>
-              <p>A avaliação da capacidade funcional através da Escala de Katz é fundamental para o planejamento assistencial, monitoramento do progresso clínico e determinação da necessidade de serviços de apoio ou institucionalização.</p>
-              <button class="btn btn-primary w-100" id="btn-start">Iniciar Avaliação</button>
+  <div class="section-blue">
+    <div class="container text-white py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 class="display-6 fw-bold mb-4">
+            <i class="bi bi-clipboard2-check"></i> Avaliação de Atividades da Vida Diária
+          </h2>
+          <p class="lead mb-4">Bem-vindo ao aplicativo de avaliação funcional! Este sistema permite realizar avaliações utilizando a Escala de Katz (AVD) e a Escala de Lawton (AIVD) para uma análise completa da capacidade funcional dos pacientes.</p>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="fw-bold mb-3">
+                <i class="bi bi-info-circle"></i> Sobre as Escalas
+              </h5>
+              <p>As escalas de Katz e Lawton são instrumentos complementares de avaliação funcional amplamente utilizados na área da saúde. A Escala de Katz avalia atividades básicas da vida diária (AVD), enquanto a Escala de Lawton avalia atividades instrumentais da vida diária (AIVD).</p>
+            </div>
+            <div class="col-md-6">
+              <div class="card bg-white bg-opacity-10 border-0">
+                <div class="card-body">
+                  <h6 class="fw-bold mb-3 text-white">
+                    <i class="bi bi-lightbulb"></i> Importância Clínica
+                  </h6>
+                  <p class="mb-0 text-white">A avaliação combinada das AVD e AIVD é fundamental para o planejamento assistencial, monitoramento do progresso clínico e determinação da necessidade de serviços de apoio ou institucionalização.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
         <div id="div-respostas"></div>
       </div>
     </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="footer-text">
+            <h6 class="text-white fw-bold mb-2">
+              <i class="bi bi-heart-pulse"></i> Desenvolvido para auxiliar profissionais de saúde
+            </h6>
+            <p class="text-white-50 mb-0">
+              Ferramenta gratuita para avaliação funcional utilizando a Escala de Katz
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="footer-social text-lg-end">
+            <div class="social-links">
+              <a href="mailto:contato@calculadorasmedicas.com" class="social-link" title="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+              <a href="https://github.com/seu-usuario" class="social-link" title="GitHub" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/seu-perfil" class="social-link" title="LinkedIn" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://wa.me/5511999999999" class="social-link" title="WhatsApp" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+            <p class="text-white-50 small mt-2 mb-0">
+              © 2024 Calculadoras Médicas. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
   <script type="module" src="script.js"></script>
 </body>
+
 </html>

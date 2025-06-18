@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raciocínio Médico da Emergência</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #bfcde03b;
+
+            h2 {
+                color: #EC4B65;
+            }
+
+            ;
+
+            p {
+                color: #323232;
+            }
+        }
+
+        .btn-outline-danger {
+            margin-bottom: 10px;
+            width: 200px;
+        }
+
+        .btn-outline-danger:hover {
+            background-color: #EC4B65 !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<!-- Container para centralizar -->
+
+<body class="container">
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Local da Dor</h2>
+            <p>
+                Onde é a dor?
+                <br>
+                Você já teve essa dor antes?
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 col-sm-12">
+            <form id="local-dor">
+                <input type="checkbox" class="btn-check" id="flanco_direito" name="flanco_direito"
+                    value="flanco_direito" autocomplete="off">
+                <label class="btn btn-outline-danger" for="flanco_direito">Flanco direito</label><br>
+
+                <input type="checkbox" class="btn-check" id="flanco_esquerdo" name="flanco_esquerdo"
+                    value="flanco_esquerdo" autocomplete="off">
+                <label class="btn btn-outline-danger" for="flanco_esquerdo">Flanco esquerdo</label><br>
+
+                <input type="checkbox" class="btn-check" id="fossa_iliaca_direita" name="fossa_iliaca_direita"
+                    value="fossa_iliaca_direita" autocomplete="off">
+                <label class="btn btn-outline-danger" for="fossa_iliaca_direita">Fossa ilíaca direita</label><br>
+
+                <input type="checkbox" class="btn-check" id="fossa_iliaca_esquerda" name="fossa_iliaca_esquerda"
+                    value="fossa_iliaca_esquerda" autocomplete="off">
+                <label class="btn btn-outline-danger" for="fossa_iliaca_esquerda">Fossa ilíaca esquerda</label><br>
+
+                <input type="checkbox" class="btn-check" id="hipocondrio_direito" name="hipocondrio_direito"
+                    value="hipocondrio_direito" autocomplete="off">
+                <label class="btn btn-outline-danger" for="hipocondrio_direito">Hipocôndrio direito</label><br>
+
+                <input type="checkbox" class="btn-check" id="hipocondrio_esquerdo" name="hipocondrio_esquerdo"
+                    value="hipocondrio_esquerdo" autocomplete="off">
+                <label class="btn btn-outline-danger" for="hipocondrio_esquerdo">Hipocôndrio esquerdo</label><br>
+
+                <input type="checkbox" class="btn-check" id="regiao_epigastrica" name="regiao_epigastrica"
+                    value="regiao_epigastrica" autocomplete="off">
+                <label class="btn btn-outline-danger" for="regiao_epigastrica">Região epigástrica</label><br>
+
+                <input type="checkbox" class="btn-check" id="regiao_hipogastrica" name="regiao_hipogastrica"
+                    value="regiao_hipogastrica" autocomplete="off">
+                <label class="btn btn-outline-danger" for="regiao_hipogastrica">Região hipogástrica</label><br>
+
+                <input type="checkbox" class="btn-check" id="regiao_mesogastrica" name="regiao_mesogastrica"
+                    value="regiao_mesogastrica" autocomplete="off">
+                <label class="btn btn-outline-danger" for="regiao_mesogastrica">Região mesogástrica</label><br>
+
+                <input type="checkbox" class="btn-check" id="difusa" name="difusa" value="difusa" autocomplete="off">
+                <label class="btn btn-outline-danger" for="difusa">Difusa</label><br>
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Características do Início da Dor</h2>
+            <p>
+                Como a dor começou?
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 col-sm-12">
+            <form id="caracteristicas-inicio">
+                <input type="checkbox" class="btn-check" id="desconforto" name="desconforto" value="desconforto"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="desconforto">Desconforto</label><br>
+
+                <input type="checkbox" class="btn-check" id="migratoria" name="migratoria" value="migratoria"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="migratoria">Migratória</label><br>
+
+                <input type="checkbox" class="btn-check" id="progressiva" name="progressiva" value="progressiva"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="progressiva">Progressiva</label><br>
+
+                <input type="checkbox" class="btn-check" id="referida" name="referida" value="referida"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="referida">Referida</label><br>
+
+                <input type="checkbox" class="btn-check" id="subita" name="subita" value="subita" autocomplete="off">
+                <label class="btn btn-outline-danger" for="subita">Súbita</label><br>
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Intensidade da Dor</h2>
+            <p>
+                Qual a intensidade da dor que está sentindo?
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 col-sm-12">
+            <form id="intensidade-dor">
+                <input type="checkbox" class="btn-check" id="fraca" name="fraca" value="fraca" autocomplete="off">
+                <label class="btn btn-outline-danger" for="fraca">Fraca</label><br>
+
+                <input type="checkbox" class="btn-check" id="media" name="media" value="media" autocomplete="off">
+                <label class="btn btn-outline-danger" for="media">Média</label><br>
+
+                <input type="checkbox" class="btn-check" id="forte" name="forte" value="forte" autocomplete="off">
+                <label class="btn btn-outline-danger" for="forte">Forte</label><br>
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Dor Referida</h2>
+            <p>
+                A dor se irradia para alguma outra região?
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 col-sm-12">
+            <form id="dor-referida">
+                <input type="checkbox" class="btn-check" id="dorso" name="dorso" value="dorso" autocomplete="off">
+                <label class="btn btn-outline-danger" for="dorso">Dorso</label><br>
+
+                <input type="checkbox" class="btn-check" id="ombro_direito" name="ombro_direito" value="ombro_direito"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="ombro_direito">Ombro direito</label><br>
+
+                <input type="checkbox" class="btn-check" id="ombro_esquerdo" name="ombro_esquerdo"
+                    value="ombro_esquerdo" autocomplete="off">
+                <label class="btn btn-outline-danger" for="ombro_esquerdo">Ombro esquerdo</label><br>
+
+                <input type="checkbox" class="btn-check" id="regiao_inguinal" name="regiao_inguinal"
+                    value="regiao_inguinal" autocomplete="off">
+                <label class="btn btn-outline-danger" for="regiao_inguinal">Região inguinal</label><br>
+
+                <input type="checkbox" class="btn-check" id="sem_dor" name="sem_dor" value="sem_dor" autocomplete="off">
+                <label class="btn btn-outline-danger" for="sem_dor">Sem dor referida</label><br>
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Tipo da Dor</h2>
+            <p>
+                Como você descreveria a dor?
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 col-sm-12">
+            <form id="tipo-dor">
+                <input type="checkbox" class="btn-check" id="aperto" name="aperto" value="aperto" autocomplete="off">
+                <label class="btn btn-outline-danger" for="aperto">Aperto</label><br>
+
+                <input type="checkbox" class="btn-check" id="colica" name="colica" value="colica" autocomplete="off">
+                <label class="btn btn-outline-danger" for="colica">Cólica</label><br>
+
+                <input type="checkbox" class="btn-check" id="constante" name="constante" value="constante"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="constante">Constante</label><br>
+
+                <input type="checkbox" class="btn-check" id="fisgada" name="fisgada" value="fisgada" autocomplete="off">
+                <label class="btn btn-outline-danger" for="fisgada">Fisgada</label><br>
+
+                <input type="checkbox" class="btn-check" id="superficial" name="superficial" value="superficial"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="superficial">Superficial</label><br>
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Duração da Dor</h2>
+            <p>
+                A dor é recente ou persistente?
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 col-sm-12">
+            <form id="duracao-dor">
+                <input type="checkbox" class="btn-check" id="aguda" name="aguda" value="aguda" autocomplete="off">
+                <label class="btn btn-outline-danger" for="aguda">Aguda</label><br>
+
+                <input type="checkbox" class="btn-check" id="cronica" name="cronica" value="cronica" autocomplete="off">
+                <label class="btn btn-outline-danger" for="cronica">Crônica</label><br>
+            </form>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h2>Ritmo Intestinal</h2>
+            <p>
+                Você percebeu alguma alteração no ritmo intestinal recentemente?
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 col-sm-12">
+            <form id="ritmo-intestinal">
+                <input type="checkbox" class="btn-check" id="alteracao_recente" name="alteracao_recente"
+                    value="alteracao_recente" autocomplete="off">
+                <label class="btn btn-outline-danger" for="alteracao_recente">Alteração recente</label><br>
+
+                <input type="checkbox" class="btn-check" id="constipacao" name="constipacao" value="constipacao"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="constipacao">Constipação</label><br>
+
+                <input type="checkbox" class="btn-check" id="diarreia" name="diarreia" value="diarreia"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="diarreia">Diarreia</label><br>
+
+                <input type="checkbox" class="btn-check" id="diarreia_com_muco" name="diarreia_com_muco"
+                    value="diarreia_com_muco" autocomplete="off">
+                <label class="btn btn-outline-danger" for="diarreia_com_muco">Diarreia com muco</label><br>
+
+                <input type="checkbox" class="btn-check" id="diarreia_muco_sanguinolenta"
+                    name="diarreia_muco_sanguinolenta" value="diarreia_muco_sanguinolenta" autocomplete="off">
+                <label class="btn btn-outline-danger" for="diarreia_muco_sanguinolenta">Diarreia
+                    muco-sanguinolenta</label><br>
+
+                <input type="checkbox" class="btn-check" id="diarreia_sanguinolenta" name="diarreia_sanguinolenta"
+                    value="diarreia_sanguinolenta" autocomplete="off">
+                <label class="btn btn-outline-danger" for="diarreia_sanguinolenta">Diarreia sanguinolenta</label><br>
+
+                <input type="checkbox" class="btn-check" id="sem_alteracao" name="sem_alteracao" value="sem_alteracao"
+                    autocomplete="off">
+                <label class="btn btn-outline-danger" for="sem_alteracao">Sem alteração</label><br>
+            </form>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <h2>Outros Sinais e Sintomas</h2>
+    <p>
+        Que outros sintomas ocorrem com a dor?
+    </p>
+    <div class="mb-3">
+        <label for="outros-sintomas" class="form-label">Outros Sintomas</label>
+        <input type="email" class="form-control" id="outros-sintomas" aria-describedby="outrosSintomas">
+
+        <div id="resultado-sintomas" class="mt-3">
+
+        </div>
+    </div>
+
+    <form id="sinais-sintomas">
+        <input type="checkbox" name="abaulamento" id="" value="abaulamento">
+        <label for="">Abaulamento</label>
+        <input type="checkbox" name="abdomen_em_tabua" id="" value="abdomen_em_tabua">
+        <label for="">Abdomen em tábua</label>
+        <input type="checkbox" name="acolia_fecal" id="" value="acolia_fecal">
+        <label for="">Acolia fecal</label>
+        <input type="checkbox" name="aftas" id="" value="aftas">
+        <label for="">Aftas</label>
+        <input type="checkbox" name="agitacao" id="" value="agitacao">
+        <label for="">Agitação</label>
+        <input type="checkbox" name="alteracao_estado_mental" id="" value="alteracao_estado_mental">
+        <label for="">Alteração do estado mental</label>
+        <input type="checkbox" name="anemia" id="" value="anemia">
+        <label for="">Anemia</label>
+        <input type="checkbox" name="anorexia" id="" value="anorexia">
+        <label for="">Anorexia</label>
+        <input type="checkbox" name="artrite_infecciosa" id="" value="artrite_infecciosa">
+        <label for="">Artrite infecciosa</label>
+        <input type="checkbox" name="artropatia_de_charcot" id="" value="artropatia_de_charcot">
+        <label for="">Artropatia de Charcot</label>
+        <input type="checkbox" name="astenia" id="" value="astenia">
+        <label for="">Astenia</label>
+        <input type="checkbox" name="ataxia_sensitiva" id="" value="ataxia_sensitiva">
+        <label for="">Ataxia sensitiva</label>
+        <input type="checkbox" name="atraso_no_crescimento" id="" value="atraso_no_crescimento">
+        <label for="">Atraso no crescimento</label>
+        <input type="checkbox" name="atrofia_muscular" id="" value="atrofia_muscular">
+        <label for="">Atrofia muscular</label>
+        <input type="checkbox" name="aversao_ao_tabaco" id="" value="aversao_ao_tabaco">
+        <label for="">Aversão ao tabaco</label>
+        <input type="checkbox" name="bradicardia" id="" value="bradicardia">
+        <label for="">Bradicardia</label>
+        <input type="checkbox" name="calafrios" id="" value="calafrios">
+        <label for="">Calafrios</label>
+        <input type="checkbox" name="cansaco" id="" value="cansaco">
+        <label for="">Cansaço</label>
+        <input type="checkbox" name="cefaleia" id="" value="cefaleia">
+        <label for="">Cefaleia</label>
+        <input type="checkbox" name="coluria" id="" value="coluria">
+        <label for="">Colúria</label>
+        <input type="checkbox" name="coma" id="" value="coma">
+        <label for="">Coma</label>
+        <input type="checkbox" name="confusao_mental" id="" value="confusao_mental">
+        <label for="">Confusão mental</label>
+        <input type="checkbox" name="convulsao" id="" value="convulsao">
+        <label for="">Convulsão</label>
+        <input type="checkbox" name="corrimento_vaginal" id="" value="corrimento_vaginal">
+        <label for="">Corrimento vaginal</label>
+        <input type="checkbox" name="cianose" id="" value="cianose">
+        <label for="">Cianose</label>
+        <input type="checkbox" name="dermatite_herpetiforme" id="" value="dermatite_herpetiforme">
+        <label for="">Dermatite herpetiforme</label>
+        <input type="checkbox" name="desidratacao" id="" value="desidratacao">
+        <label for="">Desidratação</label>
+        <input type="checkbox" name="dificuldade_de_ganhar_peso" id="" value="dificuldade_de_ganhar_peso">
+        <label for="">Dificuldade de ganhar peso</label>
+        <input type="checkbox" name="dismenorreia" id="" value="dismenorreia">
+        <label for="">Dismenorreia</label>
+        <input type="checkbox" name="dispareunia" id="" value="dispareunia">
+        <label for="">Dispareunia</label>
+        <input type="checkbox" name="dispneia" id="" value="dispneia">
+        <label for="">Dispneia</label>
+        <input type="checkbox" name="distensao_abdominal" id="" value="distensao_abdominal">
+        <label for="">Distensão abdominal</label>
+        <input type="checkbox" name="disuria" id="" value="disuria">
+        <label for="">Disúria</label>
+        <input type="checkbox" name="dor_articular" id="" value="dor_articular">
+        <label for="">Dor articular</label>
+        <input type="checkbox" name="dor_subita_ao_exercicio" id="" value="dor_subita_ao_exercicio">
+        <label for="">Dor súbita ao exercício</label>
+        <input type="checkbox" name="dor_toracica" id="" value="dor_toracica">
+        <label for="">Dor torácica</label>
+        <input type="checkbox" name="enterorragia" id="" value="enterorragia">
+        <label for="">Enterorragia</label>
+        <input type="checkbox" name="episclerite" id="" value="episclerite">
+        <label for="">Episclerite</label>
+        <input type="checkbox" name="equimose" id="" value="equimose">
+        <label for="">Equimose</label>
+        <input type="checkbox" name="eritema_cutaneo" id="" value="eritema_cutaneo">
+        <label for="">Eritema cutâneo</label>
+        <input type="checkbox" name="eritema_nodoso" id="" value="eritema_nodoso">
+        <label for="">Eritema nodoso</label>
+        <input type="checkbox" name="esteatorreia" id="" value="esteatorreia">
+        <label for="">Esteatorreia</label>
+        <input type="checkbox" name="fadiga" id="" value="fadiga">
+        <label for="">Fadiga</label>
+        <input type="checkbox" name="flatos_vaginal" id="" value="flatos_vaginal">
+        <label for="">Flatos vaginal</label>
+        <input type="checkbox" name="flatulencia" id="" value="flatulencia">
+        <label for="">Flatulência</label>
+        <input type="checkbox" name="febre" id="" value="febre">
+        <label for="">Febre</label>
+        <input type="checkbox" name="fraqueza" id="" value="fraqueza">
+        <label for="">Fraqueza</label>
+        <input type="checkbox" name="fraqueza_muscular" id="" value="fraqueza_muscular">
+        <label for="">Fraqueza muscular</label>
+        <input type="checkbox" name="globus_faringeo" id="" value="globus_faringeo">
+        <label for="">Globus faringeo</label>
+        <input type="checkbox" name="hematemese" id="" value="hematemese">
+        <label for="">Hematêmese</label>
+        <input type="checkbox" name="hematoquisia" id="" value="hematoquisia">
+        <label for="">Hematoquisia</label>
+        <input type="checkbox" name="hematuria" id="" value="hematuria">
+        <label for="">Hematúria</label>
+        <input type="checkbox" name="hiperestesia" id="" value="hiperestesia">
+        <label for="">Hiperestesia</label>
+        <input type="checkbox" name="hipersensibilidade_parede_abdominal" id=""
+            value="hipersensibilidade_parede_abdominal">
+        <label for="">Hipersensibilidade da parede abdominal</label>
+        <input type="checkbox" name="hipertensao" id="" value="hipertensao">
+        <label for="">Hipertensão</label>
+        <input type="checkbox" name="hipotensao" id="" value="hipotensao">
+        <label for="">Hipotensão</label>
+        <input type="checkbox" name="inquietacao" id="" value="inquietacao">
+        <label for="">Inquietação</label>
+        <input type="checkbox" name="ictericia" id="" value="ictericia">
+        <label for="">Icterícia</label>
+        <input type="checkbox" name="impotencia" id="" value="impotencia">
+        <label for="">Impotência</label>
+        <input type="checkbox" name="infertilidade" id="" value="infertilidade">
+        <label for="">Infertilidade</label>
+        <input type="checkbox" name="insonia" id="" value="insonia">
+        <label for="">Insônia</label>
+        <input type="checkbox" name="intolerancia_alcool" id="" value="intolerancia_alcool">
+        <label for="">Intolerância ao álcool</label>
+        <input type="checkbox" name="letargia" id="" value="letargia">
+        <label for="">Letargia</label>
+        <input type="checkbox" name="manchas_rosadas" id="" value="manchas_rosadas">
+        <label for="">Manchas rosadas</label>
+        <input type="checkbox" name="massa_palpavel" id="" value="massa_palpavel">
+        <label for="">Massa palpável</label>
+        <input type="checkbox" name="mau_halito" id="" value="mau_halito">
+        <label for="">Mau hálito</label>
+        <input type="checkbox" name="melena" id="" value="melena">
+        <label for="">Melena</label>
+        <input type="checkbox" name="metrorragia" id="" value="metrorragia">
+        <label for="">Metrorragia</label>
+        <input type="checkbox" name="mialgia" id="" value="mialgia">
+        <label for="">Mialgia</label>
+        <input type="checkbox" name="miose" id="" value="miose">
+        <label for="">Miose</label>
+        <input type="checkbox" name="nausea" id="" value="nausea">
+        <label for="">Náusea</label>
+        <input type="checkbox" name="nocturia" id="" value="nocturia">
+        <label for="">Noctúria</label>
+        <input type="checkbox" name="obnubilacao" id="" value="obnubilacao">
+        <label for="">Obnubilação</label>
+        <input type="checkbox" name="oliguria" id="" value="oliguria">
+        <label for="">Oligúria</label>
+        <input type="checkbox" name="orquite" id="" value="orquite">
+        <label for="">Orquite</label>
+        <input type="checkbox" name="osteopenia" id="" value="osteopenia">
+        <label for="">Osteopenia</label>
+        <input type="checkbox" name="palidez_cutanea" id="" value="palidez_cutanea">
+        <label for="">Palidez cutânea</label>
+        <input type="checkbox" name="palpitacao" id="" value="palpitacao">
+        <label for="">Palpitação</label>
+        <input type="checkbox" name="parestesia" id="" value="parestesia">
+        <label for="">Parestesia</label>
+        <input type="checkbox" name="pneumaturia" id="" value="pneumaturia">
+        <label for="">Pneumatúria</label>
+        <input type="checkbox" name="perda_ponderal" id="" value="perda_ponderal">
+        <label for="">Perda ponderal</label>
+        <input type="checkbox" name="perda_propriocepcao" id="" value="perda_propriocepcao">
+        <label for="">Perda da propriocepção</label>
+        <input type="checkbox" name="perda_reflexos_perifericos" id="" value="perda_reflexos_perifericos">
+        <label for="">Perda dos reflexos periféricos</label>
+        <input type="checkbox" name="perda_sensibilidade_vibratorias" id="" value="perda_sensibilidade_vibratorias">
+        <label for="">Perda da sensibilidade vibratória</label>
+        <input type="checkbox" name="plenitude_pos_prandial" id="" value="plenitude_pos_prandial">
+        <label for="">Plenitude pós prandial</label>
+        <input type="checkbox" name="polidipsia" id="" value="polidipsia">
+        <label for="">Polidipsia</label>
+        <input type="checkbox" name="poliuria" id="" value="poliuria">
+        <label for="">Poliúria</label>
+        <input type="checkbox" name="posicao_antalgica" id="" value="posicao_antalgica">
+        <label for="">Posição antálgica</label>
+        <input type="checkbox" name="proctalgia" id="" value="proctalgia">
+        <label for="">Proctalgia</label>
+        <input type="checkbox" name="prurido" id="" value="prurido">
+        <label for="">Prurido</label>
+        <input type="checkbox" name="pulso_paradoxal" id="" value="pulso_paradoxal">
+        <label for="">Pulso paradoxal</label>
+        <input type="checkbox" name="purpura_palpavel" id="" value="purpura_palpavel">
+        <label for="">Púrpura palpável</label>
+        <input type="checkbox" name="queimacao" id="" value="queimacao">
+        <label for="">Queimação</label>
+        <input type="checkbox" name="refluxo" id="" value="refluxo">
+        <label for="">Refluxo</label>
+        <input type="checkbox" name="respiracao_kussmaul" id="" value="respiracao_kussmaul">
+        <label for="">Respiração de Kussmaul</label>
+        <input type="checkbox" name="rouquidao" id="" value="rouquidao">
+        <label for="">Rouquidão</label>
+        <input type="checkbox" name="sonolencia" id="" value="sonolencia">
+        <label for="">Sonolência</label>
+        <input type="checkbox" name="sudorese" id="" value="sudorese">
+        <label for="">Sudorese</label>
+        <input type="checkbox" name="taquicardia" id="" value="taquicardia">
+        <label for="">Taquicardia</label>
+        <input type="checkbox" name="taquipneia" id="" value="taquipneia">
+        <label for="">Taquipnéia</label>
+        <input type="checkbox" name="tenesmo" id="" value="tenesmo">
+        <label for="">Tenesmo</label>
+        <input type="checkbox" name="tonteira" id="" value="tonteira">
+        <label for="">Tonteira</label>
+        <input type="checkbox" name="tosse_produtiva" id="" value="tosse_produtiva">
+        <label for="">Tosse produtiva</label>
+        <input type="checkbox" name="tosse_seca" id="" value="tosse_seca">
+        <label for="">Tosse seca</label>
+        <input type="checkbox" name="toxemia" id="" value="toxemia">
+        <label for="">Toxemia</label>
+        <input type="checkbox" name="turgencia_jugular" id="" value="turgencia_jugular">
+        <label for="">Turgência jugular</label>
+        <input type="checkbox" name="urgencia_miccional" id="" value="urgencia_miccional">
+        <label for="">Urgência miccional</label>
+        <input type="checkbox" name="urina_escura" id="" value="urina_escura">
+        <label for="">Urina escura - cor de vinho</label>
+        <input type="checkbox" name="vesiculas_papulas" id="" value="vesiculas_papulas">
+        <label for="">Vesículas ou Pápulas</label>
+        <input type="checkbox" name="vomito" id="" value="vomito">
+        <label for="">Vômito</label>
+        <input type="checkbox" name="wrist_drop" id="" value="wrist_drop">
+        <label for="">Wrist drop (paralisia do punho) </label>
+    </form>
+    <br>
+    <br>
+    <button id="enviar">ENVIAR</button>
+
+    <script type="module" src="script1.js"></script>
+</body>
+
+</html>

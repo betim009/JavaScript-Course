@@ -36,27 +36,31 @@ const perguntas = [
 
 btnStart.addEventListener("click", () => {
   divRespostas.innerHTML = `
-    <form id="form-katz">
-      ${perguntas
-        .map(
-          (item, index) => `
-        <div class="mb-4">
-          <label class="form-label"><strong>${item.pergunta}</strong></label><br>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="p${index}" value="1" required>
-            <label class="form-check-label">${item.resposta_1}</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="p${index}" value="0">
-            <label class="form-check-label">${item.resposta_2}</label>
-          </div>
-        </div>
-      `
-        )
-        .join("")}
-      <button type="submit" class="btn btn-success">Ver Resultado</button>
-    </form>
-    <div id="resultado" class="mt-4"></div>
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <form id="form-katz">
+          ${perguntas
+            .map(
+              (item, index) => `
+            <div class="mb-4">
+              <label class="form-label"><strong>${item.pergunta}</strong></label><br>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="p${index}" value="1" required>
+                <label class="form-check-label">${item.resposta_1}</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="p${index}" value="0">
+                <label class="form-check-label">${item.resposta_2}</label>
+              </div>
+            </div>
+          `
+            )
+            .join("")}
+          <button type="submit" class="btn btn-success w-100">Ver Resultado</button>
+        </form>
+        <div id="resultado" class="mt-4"></div>
+      </div>
+    </div>
   `;
 });
 
@@ -80,7 +84,7 @@ document.addEventListener("submit", function (e) {
 
   const resultadoDiv = document.getElementById("resultado");
   resultadoDiv.innerHTML = `
-    <div class="alert alert-primary">
+    <div class="alert alert-info">
       <strong>Pontuação: ${score}</strong><br>
       ${interpretacao}
     </div>

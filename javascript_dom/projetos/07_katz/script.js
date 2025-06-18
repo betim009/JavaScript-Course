@@ -43,15 +43,11 @@ btnStart.addEventListener("click", () => {
             .map(
               (item, index) => `
             <div class="mb-4">
-              <label class="form-label"><strong>${item.pergunta}</strong></label><br>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="p${index}" value="1" required>
-                <label class="form-check-label">${item.resposta_1}</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="p${index}" value="0">
-                <label class="form-check-label">${item.resposta_2}</label>
-              </div>
+              <p class="fw-semibold mb-2">${item.pergunta}</p>
+              <input class="btn-check" type="radio" name="p${index}" id="p${index}-1" value="1" autocomplete="off" required>
+              <label class="btn btn-outline-primary w-100 mb-2" for="p${index}-1">${item.resposta_1}</label><br>
+              <input class="btn-check" type="radio" name="p${index}" id="p${index}-2" value="0" autocomplete="off">
+              <label class="btn btn-outline-primary w-100" for="p${index}-2">${item.resposta_2}</label>
             </div>
           `
             )

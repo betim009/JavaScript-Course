@@ -5,3 +5,14 @@ body {
 #div-respostas .card {
   margin-bottom: 1rem;
 }
+
+.btn-outline-primary {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.btn-check:checked + .btn-outline-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}

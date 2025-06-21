@@ -1,0 +1,14 @@
+body {
+    background-color: #ededed;
+}
+
+.my-header {
+    background-color: oklch(88.2% 0.059 254.128);
+    height: 120px;
+}
+
+.resultado-partidas {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
